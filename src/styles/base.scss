@@ -2,6 +2,11 @@
 
 $ff-avenir: 'Avenir Next', sans-serif;
 
+@mixin bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 body {
   margin: 0;
 }

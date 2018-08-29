@@ -52,7 +52,8 @@
 
     color: transparent;
     background-image: linear-gradient(96deg, #6f8188, #b6b9bb);
-    background-clip: text;
+
+    @include bg-clip-text;
 
     font-family: $ff-avenir;
     font-size: 15px;
