@@ -506,7 +506,7 @@ body {
     display: flex;
     -webkit-box-align: end;
         -ms-flex-align: end;
-            align-items: end;
+            align-items: flex-end;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
@@ -518,7 +518,7 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     -ms-flex-line-pack: end;
-        align-content: end;
+        align-content: flex-end;
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;

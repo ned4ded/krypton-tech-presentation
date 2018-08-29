@@ -12,11 +12,11 @@
 
   &__projects {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     flex-flow: row wrap;
     flex-grow: 1;
     justify-content: space-between;
-    align-content: end;
+    align-content: flex-end;
 
     margin-top: 0;
     margin-bottom: 0;
