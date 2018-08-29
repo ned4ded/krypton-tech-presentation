@@ -5,7 +5,6 @@
   flex-flow: column nowrap;
 
   width: $side-bar-max-width;
-  height: 100%;
 
   transition: width ease-out 0.5s;
   transition-delay: 0;
@@ -52,8 +51,8 @@
 
     color: transparent;
     background-image: linear-gradient(96deg, #6f8188, #b6b9bb);
-
     @include bg-clip-text;
+
 
     font-family: $ff-avenir;
     font-size: 15px;

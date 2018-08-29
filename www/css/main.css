@@ -67,7 +67,6 @@ body {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   width: 225px;
-  height: 100%;
   -webkit-transition: width ease-out 0.5s;
   transition: width ease-out 0.5s;
   -webkit-transition-delay: 0;
