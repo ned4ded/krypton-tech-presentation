@@ -1,4 +1,6 @@
 .side-menu {
+  $side-bar-max-width: 225px;
+
   display: flex;
   flex-flow: column nowrap;
 
@@ -10,8 +12,6 @@
 
   background-color: #ffffff;
   box-shadow: 0px 5px 30px 0 rgba(52, 152, 219, 0.1);
-
-  $side-bar-max-width: 225px;
 
   &[data-aria-expended="false"] {
     width: 70px;

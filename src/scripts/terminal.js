@@ -29,8 +29,6 @@
       return this.expended;
     }
   }
-
+  
   const togglers = Array.from( document.querySelectorAll('[data-target]') ).map(e => new Toggler( e ));
-
-
 })();
