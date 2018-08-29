@@ -1,4 +1,10 @@
+{% import "partials/side-menu.njk" as menu %}
+
 {% extends "layout.njk" %}
+
+{% block menu %}
+  {{ menu.make() }}
+{% endblock %}
 
 {% block content %}
   <div class="container">

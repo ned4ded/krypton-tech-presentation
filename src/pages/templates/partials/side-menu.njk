@@ -1,0 +1,23 @@
+{% import "database/projects.set.njk" as projects %}
+
+{% macro make(pageName) %}
+  <nav id="side-menu" data-aria-expended="false" class="side-menu">
+    <ul class="side-menu__list">
+
+      {% for project in projects.list | orderByObjKey( ['order', 'menu'] ) %}
+      <li class="side-menu__item">
+        <a class="side-menu__link" href="{{ project.page }}">
+          <span class="side-menu__name">
+            {{ project.name }}
+          </span>
+
+          <span class="side-menu__icon side-menu__icon--{{ project.className }}">
+
+          </span>
+        </a>
+      </li>
+      {% endfor %}
+
+    </ul>
+  </nav>
+{% endmacro %}

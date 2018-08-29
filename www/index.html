@@ -4,11 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Jurry.Online</title>
+  <title>Krypton Technology Presentation</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -17,374 +16,101 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <div id="display" class="display">
-    
+  <div class="display">
+    <header class="header">
+  <a href="#side-menu" data-toggler data-target="side-menu" data-aria-expended="false" class="burger header__burger">
+    <span class="burger__line">Open menu</span>
+    <span class="burger__line burger__line--middle"></span>
+    <span class="burger__line"></span>
+  </a>
 
-
-
-<div id="menu" class="menu menu--collapsed dashboard__menu">
-  <div class="menu__jot-info">
-    <ul class="infographics menu__infographics">
-      <li class="infographics__item">
-        <span class="infographics__line infographics__line--emphasis">2</span>
-        <span class="infographics__line">Projects</span>
-      </li>
-
-      <li class="infographics__item">
-        <span class="infographics__line infographics__line--emphasis">5089.62</span>
-        <span class="infographics__line">ETH Invested</span>
-      </li>
-
-      <li class="infographics__item">
-        <span class="infographics__line infographics__line--emphasis">15.84</span>
-        <span class="infographics__line">Jot balance</span>
-      </li>
-    </ul>
-
-    <div class="menu__add-jot">
-      <a href="#" class="button button--add-jot">Add Jot</a>
-    </div>
-  </div>
-
-  <nav class="menu__side-menu">
-    <div class="menu__logotype">
-      <a href="#" class="logotype menu__logotype-link">
-        <img class="menu__logotype-img" src="assets/imgs/logotype.png" alt="Jury.Online Logotype" width="164" height="30">
-      </a>
-    </div>
-
-    <div class="menu__block menu__block--divider menu__profile">
-      
-
-  <div class="menu__user user">
-    <img src="assets/imgs/menu__user-img.png" alt="User Image" class="user__img" width="59" height="59">
-
-    <p class="user__info">
-      <span class="user__name">David G. </span>
-      <span class="user__job user__job--type--investor">Investor</span>
-    </p>
-  </div>
-
-
-
-      <a class="button button--theme--empty button--add menu__add-contact" href="#">Add contract</a>
-    </div>
-
-    
-  <ul  class="menu__list undefined">
-    
-      <li class="menu__item item--icon item--icon--profile">
-
-        
-          <a class="menu__link " href="#">
-            <span class="menu__link-icon ">
-              
-
-              
-  <svg class="icon icon__profile ">
-    <use xlink:href="assets/sprite.svg#icon__profile"></use>
-  </svg>
-
-              
-            </span>
-            <span class="menu__link-text">my profile</span>
-          </a>
-        
-      </li>
-    
-      <li class="menu__item undefined">
-
-        
-          <a class="menu__link " href="#">
-            <span class="menu__link-icon ">
-              
-
-              
-  <svg class="icon icon__calendar ">
-    <use xlink:href="assets/sprite.svg#icon__calendar"></use>
-  </svg>
-
-              
-            </span>
-            <span class="menu__link-text">dashboard</span>
-          </a>
-        
-      </li>
-    
-      <li class="menu__item undefined">
-
-        
-          <a class="menu__link menu__link--active " href="#">
-            <span class="menu__link-icon ">
-              
-
-              
-  <svg class="icon icon__folder ">
-    <use xlink:href="assets/sprite.svg#icon__folder"></use>
-  </svg>
-
-              
-            </span>
-            <span class="menu__link-text">projects</span>
-          </a>
-        
-      </li>
-    
-      <li class="menu__item undefined">
-
-        
-          
-
-          <a class="menu__link menu__link--toggler " href="#menu-list-contracts" data-toggle="collapse" aria-expanded="false" aria-controls="menu-list-contracts">
-            <span class="menu__link-icon ">
-              
-
-              
-  <svg class="icon icon__feed ">
-    <use xlink:href="assets/sprite.svg#icon__feed"></use>
-  </svg>
-
-              
-            </span>
-            <span class="menu__link-text">contracts</span>
-
-            
-            <svg class="icon icon__dropdown-arrow menu__dropdown-icon">
-              <use xlink:href="assets/sprite.svg#icon__dropdown-arrow"></use>
-            </svg>
-            
-          </a>
-
-          
-  <ul id=menu-list-contracts class="menu__list menu__list--level--two collapse">
-    
-      <li class="menu__item undefined">
-
-        
-          <a class="menu__link menu__link--level--two " href="#">
-            <span class="menu__link-icon menu__link-icon--liststyle menu__link-icon--liststyle--green">
-              
-            </span>
-            <span class="menu__link-text">active</span>
-          </a>
-        
-      </li>
-    
-      <li class="menu__item undefined">
-
-        
-          <a class="menu__link menu__link--level--two " href="#" data-message=notify>
-            <span class="menu__link-icon menu__link-icon--liststyle menu__link-icon--liststyle--blue">
-              
-            </span>
-            <span class="menu__link-text">pending</span>
-          </a>
-        
-      </li>
-    
-      <li class="menu__item undefined">
-
-        
-          <a class="menu__link menu__link--level--two " href="#">
-            <span class="menu__link-icon menu__link-icon--liststyle menu__link-icon--liststyle--purple">
-              
-            </span>
-            <span class="menu__link-text">disputes</span>
-          </a>
-        
-      </li>
-    
-      <li class="menu__item undefined">
-
-        
-          <a class="menu__link menu__link--level--two " href="#">
-            <span class="menu__link-icon menu__link-icon--liststyle menu__link-icon--liststyle--orange">
-              
-            </span>
-            <span class="menu__link-text">drafts</span>
-          </a>
-        
-      </li>
-    
-      <li class="menu__item undefined">
-
-        
-          <a class="menu__link menu__link--level--two " href="#">
-            <span class="menu__link-icon menu__link-icon--liststyle menu__link-icon--liststyle--grey">
-              
-            </span>
-            <span class="menu__link-text">closed</span>
-          </a>
-        
-      </li>
-    
-  </ul>
-
-        
-      </li>
-    
-      <li class="menu__item undefined">
-
-        
-          <a class="menu__link " href="#">
-            <span class="menu__link-icon ">
-              
-
-              
-  <svg class="icon icon__gear ">
-    <use xlink:href="assets/sprite.svg#icon__gear"></use>
-  </svg>
-
-              
-            </span>
-            <span class="menu__link-text">settings</span>
-          </a>
-        
-      </li>
-    
-  </ul>
-
-
-    
-  <ul  class="menu__list menu__list--help">
-    
-      <li class="menu__item undefined">
-
-        
-          <a class="menu__link  menu__link--help" href="#">
-            <span class="menu__link-icon ">
-              
-            </span>
-            <span class="menu__link-text">F.A.Q.</span>
-          </a>
-        
-      </li>
-    
-      <li class="menu__item undefined">
-
-        
-          <a class="menu__link  menu__link--help" href="#">
-            <span class="menu__link-icon ">
-              
-            </span>
-            <span class="menu__link-text">Guide</span>
-          </a>
-        
-      </li>
-    
-      <li class="menu__item undefined">
-
-        
-          <a class="menu__link  menu__link--help" href="#">
-            <span class="menu__link-icon ">
-              
-            </span>
-            <span class="menu__link-text">Help</span>
-          </a>
-        
-      </li>
-    
-  </ul>
-
-
-    <div class="menu__block menu__sign-out">
-      <a class="button button--theme--empty-dimmed button--sign-out" href="#">Sign out</a>
-    </div>
-  </nav>
-
-  <div id="menu-lining" class="menu__lining"></div>
-</div>
+  <img class="header__logo" src="assets/imgs/krypton-tech-logo-white.svg" alt="Krypton Technology Logotype " width="159" height="32">
+</header>
 
 
     <div class="content">
       
-
-
-<header class="header display__header">
-  <div class="header__block header__search">
-    
-<form action="http://echo.htmlacademy.ru/" method="GET" class="search ">
-  <input id="header-search" type="text" class="search__input" required name="search_query">
   
-  <label for="header-search" class="search__label">
-    
-  <svg class="icon icon__search search__icon">
-    <use xlink:href="assets/sprite.svg#icon__search"></use>
-  </svg>
-  </label>
+  <nav id="side-menu" data-aria-expended="false" class="side-menu">
+    <ul class="side-menu__list">
 
-  <p class="search__text">
-    Search project, payment, transaction...
-  </p>
-</form>
+      
+      <li class="side-menu__item">
+        <a class="side-menu__link" href="">
+          <span class="side-menu__name">
+            icoadm.in
+          </span>
 
-  </div>
+          <span class="side-menu__icon side-menu__icon--icoadm-in">
 
-  <div class="header__block header__infographics">
-    <ul class="infographics">
-      <li class="infographics__item">
-        <span class="infographics__line infographics__line--emphasis">2</span>
-        <span class="infographics__line">Projects</span>
-      </li>
-
-      <li class="infographics__item">
-        <span class="infographics__line infographics__line--emphasis">5089.62</span>
-        <span class="infographics__line">ETH Invested</span>
-      </li>
-
-      <li class="infographics__item">
-        <span class="infographics__line infographics__line--emphasis">15.84</span>
-        <span class="infographics__line">Jot balance</span>
-      </li>
-    </ul>
-
-    <div class="header__add-jot">
-      <a href="#" class="button button--theme--bright">Add Jot</a>
-    </div>
-  </div>
-
-  <div class="header__block header__toolbar">
-    <div class="header__toolbar-item">
-      <a id="menu-toggler" href="#" class="toggle header__toggle">Side menu toggler</a>
-    </div>
-
-    <div class="header__toolbar-item">
-      <a href="#" class="logotype header__logotype">
-        <img class="header__logotype-img" src="assets/imgs/logotype.png" alt="Jury.Online Logotype" width="110" height="20">
-      </a>
-    </div>
-
-    <ul class="tools header__tools header__toolbar-item">
-      <li class="tools__item">
-        <a href="#" class="tools__link">
-          
-  <svg class="icon icon__bell tools__icon tools__icon--blob">
-    <use xlink:href="assets/sprite.svg#icon__bell"></use>
-  </svg><span class="tools__name" data-notification="true">Уведомления</span>
+          </span>
         </a>
       </li>
+      
+      <li class="side-menu__item">
+        <a class="side-menu__link" href="">
+          <span class="side-menu__name">
+            swap.online
+          </span>
 
-      <li class="tools__item">
-        <a href="#" class="tools__link">
-          
-  <svg class="icon icon__blob tools__icon tools__icon--blob">
-    <use xlink:href="assets/sprite.svg#icon__blob"></use>
-  </svg><span class="tools__name" data-notification="false">Диалоги</span>
+          <span class="side-menu__icon side-menu__icon--swap-online">
+
+          </span>
         </a>
       </li>
+      
+      <li class="side-menu__item">
+        <a class="side-menu__link" href="">
+          <span class="side-menu__name">
+            jury.online
+          </span>
+
+          <span class="side-menu__icon side-menu__icon--jury-online">
+
+          </span>
+        </a>
+      </li>
+      
+      <li class="side-menu__item">
+        <a class="side-menu__link" href="">
+          <span class="side-menu__name">
+            buzz.io
+          </span>
+
+          <span class="side-menu__icon side-menu__icon--buzz-io">
+
+          </span>
+        </a>
+      </li>
+      
+      <li class="side-menu__item">
+        <a class="side-menu__link" href="">
+          <span class="side-menu__name">
+            array.io
+          </span>
+
+          <span class="side-menu__icon side-menu__icon--array-io">
+
+          </span>
+        </a>
+      </li>
+      
+      <li class="side-menu__item">
+        <a class="side-menu__link" href="">
+          <span class="side-menu__name">
+            dialogue key
+          </span>
+
+          <span class="side-menu__icon side-menu__icon--dialogue-key">
+
+          </span>
+        </a>
+      </li>
+      
+
     </ul>
+  </nav>
 
-    <div class="ethereum-net header__ethereum-net">
-      <a href="#ethereum-net-dropdown" class="ethereum-net__link" data-toggle="collapse" aria-expanded="false" aria-controls="ethereum-net-dropdown">
-        <img class="ethereum-net__img" src="assets/imgs/fox-placeholder.png" alt="Awesome fox"><span class="ethereum-net__text">Ethereum Nain Net</span>
-      </a>
-      <div id="ethereum-net-dropdown" class="ethereum-net__dropdown collapse">
-        <p class="ethereum-net__dropdown-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
-      </div>
-    </div>
-  </div>
-
-</header>
 
 
       <div class="dashboard container-fluid">
@@ -412,14 +138,9 @@
       </div>
 
     </div>
-
   </div>
 
 
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 
