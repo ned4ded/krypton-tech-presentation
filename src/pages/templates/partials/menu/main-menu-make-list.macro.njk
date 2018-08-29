@@ -1,0 +1,44 @@
+{% import 'partials/icon.njk' as icon %}
+
+{% macro make(items, mods, id) %}
+  <ul {{ 'id=' + id if id }} class="menu__list{{ ' ' + mods }}{{ ' collapse' if id }}">
+    {% for item in items %}
+      <li class="menu__item{{ ' ' + item.mods }}">
+
+        {% if item.list %}
+          {% set newId = 'menu-list-' + item.name %}
+
+          <a class="menu__link menu__link--toggler {{item.linkMods if item.linkMods}}" href="#{{ newId }}" data-toggle="collapse" aria-expanded="false" aria-controls="{{ newId }}">
+            <span class="menu__link-icon {{ item.iconMods }}">
+              {% if item.icon %}
+
+              {{ icon.make( item.icon ) }}
+
+              {% endif %}
+            </span>
+            <span class="menu__link-text">{{ item.name }}</span>
+
+            {% if item.list %}
+            <svg class="icon icon__dropdown-arrow menu__dropdown-icon">
+              <use xlink:href="assets/sprite.svg#icon__dropdown-arrow"></use>
+            </svg>
+            {% endif%}
+          </a>
+
+          {{ make(item.list, 'menu__list--level--two', newId) }}
+        {% else %}
+          <a class="menu__link{{' menu__link--active' if item.active}}{{' menu__link--level--two' if id}} {{' ' + item.linkMods if item.linkMods}}" href="{{ item.href if item.href else '#' }}"{{ ' data-message=' + item.message if item.message }}>
+            <span class="menu__link-icon {{ item.iconMods }}">
+              {% if item.icon %}
+
+              {{ icon.make( item.icon ) }}
+
+              {% endif %}
+            </span>
+            <span class="menu__link-text">{{ item.name }}</span>
+          </a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}

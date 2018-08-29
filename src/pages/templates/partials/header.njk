@@ -1,0 +1,67 @@
+{% import 'partials/icon.njk' as icon %}
+{% import 'partials/search-bar.njk' as search %}
+
+<header class="header display__header">
+  <div class="header__block header__search">
+    {{ search.make() }}
+  </div>
+
+  <div class="header__block header__infographics">
+    <ul class="infographics">
+      <li class="infographics__item">
+        <span class="infographics__line infographics__line--emphasis">2</span>
+        <span class="infographics__line">Projects</span>
+      </li>
+
+      <li class="infographics__item">
+        <span class="infographics__line infographics__line--emphasis">5089.62</span>
+        <span class="infographics__line">ETH Invested</span>
+      </li>
+
+      <li class="infographics__item">
+        <span class="infographics__line infographics__line--emphasis">15.84</span>
+        <span class="infographics__line">Jot balance</span>
+      </li>
+    </ul>
+
+    <div class="header__add-jot">
+      <a href="#" class="button button--theme--bright">Add Jot</a>
+    </div>
+  </div>
+
+  <div class="header__block header__toolbar">
+    <div class="header__toolbar-item">
+      <a id="menu-toggler" href="#" class="toggle header__toggle">Side menu toggler</a>
+    </div>
+
+    <div class="header__toolbar-item">
+      <a href="#" class="logotype header__logotype">
+        <img class="header__logotype-img" src="assets/imgs/logotype.png" alt="Jury.Online Logotype" width="110" height="20">
+      </a>
+    </div>
+
+    <ul class="tools header__tools header__toolbar-item">
+      <li class="tools__item">
+        <a href="#" class="tools__link">
+          {{ icon.make('bell', 'tools__icon tools__icon--blob') }}<span class="tools__name" data-notification="true">Уведомления</span>
+        </a>
+      </li>
+
+      <li class="tools__item">
+        <a href="#" class="tools__link">
+          {{ icon.make('blob', 'tools__icon tools__icon--blob') }}<span class="tools__name" data-notification="false">Диалоги</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="ethereum-net header__ethereum-net">
+      <a href="#ethereum-net-dropdown" class="ethereum-net__link" data-toggle="collapse" aria-expanded="false" aria-controls="ethereum-net-dropdown">
+        <img class="ethereum-net__img" src="assets/imgs/fox-placeholder.png" alt="Awesome fox"><span class="ethereum-net__text">Ethereum Nain Net</span>
+      </a>
+      <div id="ethereum-net-dropdown" class="ethereum-net__dropdown collapse">
+        <p class="ethereum-net__dropdown-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
+      </div>
+    </div>
+  </div>
+
+</header>

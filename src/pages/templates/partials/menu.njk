@@ -1,0 +1,52 @@
+{% import 'partials/user.njk' as user %}
+{% import 'partials/menu/main-menu.set.njk' as menu %}
+{% import 'partials/menu/main-menu-make-list.macro.njk' as list %}
+
+<div id="menu" class="menu menu--collapsed dashboard__menu">
+  <div class="menu__jot-info">
+    <ul class="infographics menu__infographics">
+      <li class="infographics__item">
+        <span class="infographics__line infographics__line--emphasis">2</span>
+        <span class="infographics__line">Projects</span>
+      </li>
+
+      <li class="infographics__item">
+        <span class="infographics__line infographics__line--emphasis">5089.62</span>
+        <span class="infographics__line">ETH Invested</span>
+      </li>
+
+      <li class="infographics__item">
+        <span class="infographics__line infographics__line--emphasis">15.84</span>
+        <span class="infographics__line">Jot balance</span>
+      </li>
+    </ul>
+
+    <div class="menu__add-jot">
+      <a href="#" class="button button--add-jot">Add Jot</a>
+    </div>
+  </div>
+
+  <nav class="menu__side-menu">
+    <div class="menu__logotype">
+      <a href="#" class="logotype menu__logotype-link">
+        <img class="menu__logotype-img" src="assets/imgs/logotype.png" alt="Jury.Online Logotype" width="164" height="30">
+      </a>
+    </div>
+
+    <div class="menu__block menu__block--divider menu__profile">
+      {{ user.modify('menu__user') }}
+
+      <a class="button button--theme--empty button--add menu__add-contact" href="#">Add contract</a>
+    </div>
+
+    {{ list.make( menu.main ) }}
+
+    {{ list.make( menu.help, 'menu__list--help' ) }}
+
+    <div class="menu__block menu__sign-out">
+      <a class="button button--theme--empty-dimmed button--sign-out" href="#">Sign out</a>
+    </div>
+  </nav>
+
+  <div id="menu-lining" class="menu__lining"></div>
+</div>

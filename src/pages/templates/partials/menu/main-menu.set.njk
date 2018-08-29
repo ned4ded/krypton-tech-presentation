@@ -1,0 +1,26 @@
+{%
+  set main = [
+      { name: 'my profile', mods: 'item--icon item--icon--profile', icon: 'profile' },
+      { name: 'dashboard', icon: 'calendar' },
+      { name: 'projects', active: true, icon: 'folder' },
+      {
+        name: 'contracts', icon: 'feed',
+        list: [
+          { name: 'active', iconMods: 'menu__link-icon--liststyle menu__link-icon--liststyle--green' },
+          { name: 'pending', iconMods: 'menu__link-icon--liststyle menu__link-icon--liststyle--blue', message: 'notify' },
+          { name: 'disputes', iconMods: 'menu__link-icon--liststyle menu__link-icon--liststyle--purple' },
+          { name: 'drafts', iconMods: 'menu__link-icon--liststyle menu__link-icon--liststyle--orange' },
+          { name: 'closed', iconMods: 'menu__link-icon--liststyle menu__link-icon--liststyle--grey' }
+        ]
+      },
+      { name: 'settings', icon: 'gear' }
+    ]
+%}
+
+{%
+  set help = [
+    { name: 'F.A.Q.', linkMods: 'menu__link--help' },
+    { name: 'Guide', linkMods: 'menu__link--help' },
+    { name: 'Help', linkMods: 'menu__link--help' }
+  ]
+%}
