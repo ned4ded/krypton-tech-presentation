@@ -97,4 +97,35 @@
 
     return;
   });
+
+  var swiper = new Swiper('.swiper-container', {
+    init: true,
+    direction: 'vertical',
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoHeight: true,
+    speed: 500,
+    autoplay: {
+      delay: 2500,
+    },
+    on: {
+      slideChange: function() {
+        const prev = this.previousIndex;
+        const cur = this.activeIndex;
+
+        const prevCard = this.slides[prev].querySelector('.project-card');
+        const curCard = this.slides[cur].querySelector('.project-card');
+
+        prevCard.classList.remove('project-card--active');
+        prevCard.classList.add('project-card--inactive');
+
+        curCard.classList.remove('project-card--inactive');
+        curCard.classList.add('project-card--active');
+
+        return;
+      }
+    },
+  });
 })();

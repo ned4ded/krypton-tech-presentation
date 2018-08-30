@@ -12,25 +12,33 @@
 {% endblock %}
 
 {% block content %}
-  <div class="projects-page">
+  <div class="dashboard__container dashboard__container--projects">
+    <div class="projects-page">
     <div class="projects-page__list">
       <h2 class="projects-page__heading">Discover our Projects</h2>
       <a href="index.html" class="faded-btn projects-page__faded-btn">see all projects</a>
-      <ul class="projects-page__slider">
-        <li class="projects-page__slider-item">
-          {{ card.make( projects.list[1], 'projects-page__project-card project-card--inactive' ) }}
-        </li>
-        <li class="projects-page__slider-item projects-page__slider-item--active">
-          {{ card.make( projects.list[2], 'projects-page__project-card project-card--active' ) }}
-        </li>
-        <li class="projects-page__slider-item">
-          {{ card.make( projects.list[0], 'projects-page__project-card project-card--inactive' ) }}
-        </li>
-      </ul>
+
+      <div class="projects-page__slider">
+        <div class="swiper-container projects-page__slider-container">
+          <ul class="swiper-wrapper projects-page__slider-list">
+            <li class="swiper-slide projects-page__slider-item">
+              {{ card.make( projects.list[1], 'projects-page__project-card project-card--inactive' ) }}
+            </li>
+            <li class="swiper-slide projects-page__slider-item">
+              {{ card.make( projects.list[2], 'projects-page__project-card project-card--inactive' ) }}
+            </li>
+            <li class="swiper-slide projects-page__slider-item">
+              {{ card.make( projects.list[0], 'projects-page__project-card project-card--inactive' ) }}
+            </li>
+          </ul>
+        </div>
+      </div>
+
     </div>
 
     <div class="projects-page__info">
       {{ jumbo.make( project ) }}
     </div>
+  </div>
   </div>
 {% endblock %}
