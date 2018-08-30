@@ -609,22 +609,22 @@ body {
     font-weight: 500;
     line-height: 100%; }
     .project-jumbotron__link:before {
-      content: '';
       position: absolute;
       z-index: -1;
-      background-image: -webkit-gradient(linear, left bottom, left top, from(#9d3e8e), to(#3a2568));
-      background-image: linear-gradient(to top, #9d3e8e, #3a2568);
-      width: 100%;
-      height: 100%;
       top: 0;
       left: 0;
-      border-radius: 25px;
-      border: 2px solid #442c7b;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
-      opacity: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
       -webkit-transition: opacity .1s ease-in;
-      transition: opacity .1s ease-in; }
+      transition: opacity .1s ease-in;
+      opacity: 0;
+      border: 2px solid #442c7b;
+      border-radius: 25px;
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#9d3e8e), to(#3a2568));
+      background-image: linear-gradient(to top, #9d3e8e, #3a2568); }
     .project-jumbotron__link:active:before {
       opacity: 1; }
   .project-jumbotron__link-container {
@@ -720,6 +720,175 @@ body {
     margin-top: 44px;
     height: 50px;
     text-align: center; }
+
+.project {
+  display: block;
+  overflow-y: hidden;
+  width: 100%;
+  max-width: 1185px;
+  margin: auto;
+  height: 735px; }
+  .project__page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: 100%;
+    height: 100%;
+    min-height: 735px; }
+  .project__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50%; }
+  .project__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 100%;
+    max-height: 655px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .project__row--horizontal {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap; }
+    .project__row--padding {
+      padding-top: 90px; }
+  .project__btn {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 80px;
+    text-align: center; }
+  .project__faded-btn {
+    min-width: 365px;
+    text-align: center;
+    letter-spacing: 1.1px;
+    font-size: 12px;
+    color: rgba(42, 40, 41, 0.4);
+    border-color: rgba(42, 40, 41, 0.2);
+    cursor: pointer; }
+  .project__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .project__logotype {
+    margin-bottom: 68px; }
+    .project__logotype--jury-online {
+      width: 438px;
+      height: 246px; }
+  .project__slogan {
+    margin: 0;
+    margin-bottom: 24px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: transparent;
+    background-image: linear-gradient(96deg, #697d84, #bbbcbe);
+    font-family: "Avenir Next", sans-serif;
+    font-size: 16.5px;
+    font-weight: 500;
+    line-height: 100%;
+    -webkit-background-clip: text;
+    background-clip: text; }
+  .project__descr {
+    max-width: 312px;
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: transparent;
+    background-image: linear-gradient(96deg, #697d84, #bbbcbe);
+    font-family: "Avenir Next", sans-serif;
+    font-size: 16.5px;
+    font-weight: 300;
+    line-height: 100%;
+    line-height: 1.6;
+    -webkit-background-clip: text;
+    background-clip: text; }
+  .project__paragraph {
+    width: 100%;
+    padding-left: 60px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .project__paragraph:not(:last-of-type) {
+      margin-bottom: 42px; }
+    .project__paragraph-heading {
+      position: relative;
+      font-family: "Avenir Next", sans-serif;
+      letter-spacing: 2.5px;
+      font-size: 16.5px;
+      font-weight: 500;
+      line-height: 1.67;
+      color: transparent;
+      background-image: linear-gradient(96deg, #697d84, #bbbcbe);
+      text-transform: uppercase;
+      -webkit-background-clip: text;
+      background-clip: text;
+      margin: 0;
+      margin-bottom: 11px; }
+      .project__paragraph-heading:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 41px;
+        height: 2px;
+        top: 50%;
+        left: -60px;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#9d3e8e), to(#3a2568));
+        background-image: linear-gradient(to bottom, #9d3e8e, #3a2568); }
+    .project__paragraph-text {
+      margin: 0;
+      line-height: 1.5;
+      font-family: "Avenir Next", sans-serif;
+      letter-spacing: 0.4px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.5;
+      color: transparent;
+      background-image: linear-gradient(96deg, #697d84, #bbbcbe);
+      -webkit-background-clip: text;
+      background-clip: text;
+      max-width: 415px; }
+      .project__paragraph-text:not(:last-of-type) {
+        margin-bottom: 25px; }
+  .project__row--horizontal .project__paragraph {
+    width: 50%; }
 
 .projects-page {
   display: -webkit-box;

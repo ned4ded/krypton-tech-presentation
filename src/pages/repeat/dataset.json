@@ -1,0 +1,63 @@
+[
+  {
+    "name": "jury.online",
+    "className": "jury-online",
+    "longDescr": "Unique platform for secure investment in responsible ICOs.",
+    "slogan": "The place for responsible ICO ",
+    "site": "www.jury.online",
+    "logo": {
+      "name": "jury-online-logotype.png",
+      "width": 513,
+      "height": 290
+    },
+    "shortText" : [
+      {
+        "heading": "ICO Dispute Resolution",
+        "shortcut": "Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain"
+      },
+      {
+        "heading": "Security",
+        "shortcut": "All smart contracts are deployed by the Projects, but they are based on Jury.Online templates which are open source and verified. This method helps to achieve flawless operation of smart contracts and add Arbiters to the relations between the Investor and the Project."
+      },
+      {
+        "heading": "Multistep Funds Release",
+        "shortcut": "Stored funds are released upon completion of certain milestones set by the Project."
+      }
+    ],
+    "fullText": [
+      [
+        {
+          "heading": "ICO Dispute Resolution",
+          "paragraphs": [
+            "Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online offers pools of Arbiters for the Projects and Investors.",
+            "Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online offers pools of Arbiters for the Projects and Investors.",
+            "Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online."
+          ]
+        },
+        {
+          "paragraphs": [
+            "Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain"
+          ]
+        },
+        {
+          "heading": "Security",
+          "paragraphs": [
+            "All smart contracts are deployed by the Projects, but they are based on Jury.Online templates which are open source and verified. This method helps to achieve flawless operation of smart contracts and add Arbiters to the relations between the Investor and the Project. Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain."
+          ]
+        }
+      ],
+
+      [
+        {
+          "heading": "Multistep Funds Release",
+          "no-btn": true,
+          "paragraphs": [
+            "Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online offers pools of Arbiters for the Projects and Investors.",
+            "Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online offers pools of Arbiters for the Projects and Investors.",
+            "Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online."
+          ]
+        }
+      ]
+    ]
+  }
+]

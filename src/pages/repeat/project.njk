@@ -1,0 +1,77 @@
+{% import "partials/side-menu.njk" as menu %}
+{% import "partials/project-card.njk" as card %}
+{% import "dataset/projects.set.njk" as projects %}
+
+{% extends "layout.njk" %}
+
+{% block menu %}
+  {{ menu.make() }}
+{% endblock %}
+
+{% block content %}
+  <div class="project">
+    <div class="projects__transporter">
+      <div data-page class="project__page project__page--main">
+        <div class="project__row">
+          <div class="project__column project__info">
+            <img src="assets/imgs/{{ logo.name }}" alt="" width="{{ logo.width }}" height="{{ logo.height }}" class="project__logotype project__logotype--{{className}}">
+
+            <p class="project__slogan">{{ slogan }}</p>
+
+            <p class="project__descr">{{ longDescr }}</p>
+          </div>
+
+          <div class="project__column">
+            {% for item in shortText %}
+            <div class="project__paragraph project__paragraph--shortcut">
+              <p class="project__paragraph-heading">
+                {{ item.heading }}
+              </p>
+              <p class="project__paragraph-text">
+                {{ item.shortcut }}
+              </p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="project__row project__btn">
+          <a data-page-toggler="next" class="faded-btn project__faded-btn">see full description</a>
+        </div>
+      </div>
+
+      {% for page in fullText %}
+
+        <div data-page class="project__page">
+          <div class="project__row project__row--horizontal project__row--padding">
+
+            {% for section in page %}
+            <div class="project__paragraph">
+
+              {% if section.heading %}
+              <p class="project__paragraph-heading">
+                {{ section.heading }}
+              </p>
+              {% endif %}
+
+              {% for paragraph in section.paragraphs %}
+              <p class="project__paragraph-text">
+                {{ paragraph }}
+              </p>
+              {% endfor %}
+            </div>
+            {% endfor %}
+          </div>
+
+          {% if page['no-btn'] != true %}
+          <div class="project__row project__btn">
+            <a data-page-toggler="next" class="faded-btn project__faded-btn">see full description</a>
+          </div>
+          {% endif %}
+        </div>
+
+      {% endfor %}
+
+    </div>
+  </div>
+{% endblock %}

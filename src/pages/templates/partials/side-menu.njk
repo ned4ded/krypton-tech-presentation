@@ -6,7 +6,7 @@
 
       {% for project in projects.list | orderByObjKey( ['order', 'menu'] ) %}
       <li class="side-menu__item">
-        <a class="side-menu__link" href="{{ project.page }}">
+        <a class="side-menu__link" href="{{ project.link }}">
           <span class="side-menu__name">
             {{ project.name }}
           </span>
