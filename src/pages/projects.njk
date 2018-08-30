@@ -1,0 +1,36 @@
+{% import "partials/side-menu.njk" as menu %}
+{% import "partials/project-card.njk" as card %}
+{% import "partials/project-jumbotron.njk" as jumbo %}
+{% import "dataset/projects.set.njk" as projects %}
+
+{% extends "layout.njk" %}
+
+{% set project = projects.list[2] %}
+
+{% block menu %}
+  {{ menu.make() }}
+{% endblock %}
+
+{% block content %}
+  <div class="projects-page">
+    <div class="projects-page__list">
+      <h2 class="projects-page__heading">Discover our Projects</h2>
+      <a href="index.html" class="faded-btn projects-page__faded-btn">see all projects</a>
+      <ul class="projects-page__slider">
+        <li class="projects-page__slider-item">
+          {{ card.make( projects.list[1], 'projects-page__project-card project-card--inactive' ) }}
+        </li>
+        <li class="projects-page__slider-item projects-page__slider-item--active">
+          {{ card.make( projects.list[2], 'projects-page__project-card project-card--active' ) }}
+        </li>
+        <li class="projects-page__slider-item">
+          {{ card.make( projects.list[0], 'projects-page__project-card project-card--inactive' ) }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="projects-page__info">
+      {{ jumbo.make( project ) }}
+    </div>
+  </div>
+{% endblock %}

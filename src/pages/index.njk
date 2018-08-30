@@ -1,4 +1,5 @@
 {% import "partials/side-menu.njk" as menu %}
+{% import "partials/project-card.njk" as card %}
 {% import "dataset/projects.set.njk" as projects %}
 
 {% extends "layout.njk" %}
@@ -9,27 +10,24 @@
 
 {% block content %}
   <div class="main-page">
-    <div class="dashboard__block dashboard__block--no-margin main-page__logo">
+    <div class="main-page__block main-page__block--no-margin main-page__logo">
       <span class="main-page__logo-divider main-page__logo-divider--position--left"></span>
       <img src="assets/imgs/krypton-tech-logo-color.svg" alt="Krypton Technology Logotype" width="332" height="65">
       <span class="main-page__logo-divider main-page__logo-divider--position--right"></span>
     </div>
 
-    <ul class="dashboard__block main-page__projects">
+    <ul class="main-page__block main-page__projects">
       {% for project in projects.list | orderByObjKey( ['order', 'main'] ) %}
+
         <li class="main-page__project-card">
-          <a class="project-card" href="">
-            <span class="project-card__icon project-card__icon--{{ project.className }}"></span>
-            <p class="project-card__info">
-              <span class="project-card__name">{{ project.name }} </span><span class="project-card__descr">{{ project['short-description'] }}</span>
-            </p>
-          </a>
+          {{ card.make( project ) }}
         </li>
+
       {% endfor %}
     </ul>
 
-    <div class="dashboard__block main-page__btn">
-      <a class="faded-btn" href="#">go to the list of projects</a>
+    <div class="main-page__block main-page__btn">
+      <a class="faded-btn" href="projects.html">go to the list of projects</a>
     </div>
   </div>
 {% endblock %}

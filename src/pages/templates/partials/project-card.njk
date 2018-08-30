@@ -1,0 +1,9 @@
+{% macro make(project, mods = false) %}
+  <a class="project-card{{ ' ' + mods if mods}}" href="{{ project.path }}">
+    <span class="project-card__icon project-card__icon--{{ project.className }}"></span>
+
+    <p class="project-card__info">
+      <span class="project-card__name">{{ project.name }} </span><span class="project-card__descr">{{ project['short-description'] }}</span>
+    </p>
+  </a>
+{% endmacro %}

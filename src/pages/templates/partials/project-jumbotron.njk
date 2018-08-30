@@ -1,0 +1,16 @@
+{% macro make(project, mods = false) %}
+  <div class="project-jumbotron{{ ' ' + mods if mods}}">
+    <img src="assets/imgs/{{ project.logo.name }}" alt="" width="{{ project.logo.width }}" height="{{ project.logo.height }}" class="project-jumbotron__logotype">
+
+    <p class="project-jumbotron__slogan">{{ project.slogan }}</p>
+
+    <p class="project-jumbotron__descr">{{ project['long-description'] }}</p>
+
+    <a href="{{ project.link }}" class="project-jumbotron__link">read more</a>
+
+    <span class="project-jumbotron__site-container">
+      <span class="project-jumbotron__site">{{ project.site }}</span>
+    </span>
+
+  </div>
+{% endmacro %}

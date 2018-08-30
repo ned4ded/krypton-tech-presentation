@@ -22,6 +22,11 @@
     box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(137, 45, 162, 0.31), 0px 0 15px 0 rgba(137, 45, 162, 0.6);
   }
 
+  &--inactive {
+    box-shadow: none;
+    background-color: transparent;
+  }
+
   &__icon {
     position: relative;
     z-index: 1;
@@ -157,7 +162,8 @@
   }
 
   &:hover &__icon,
-  &:active &__icon {
+  &:active &__icon,
+  &--active &__icon {
     &:before {
       width: 112px;
       height: 112px;
@@ -263,7 +269,9 @@
   &:hover &__name,
   &:hover &__descr,
   &:active &__name,
-  &:active &__descr {
+  &:active &__descr,
+  &--active &__name,
+  &--active &__descr {
     color: #423045;
   }
 }
