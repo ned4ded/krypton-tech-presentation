@@ -556,16 +556,17 @@ body {
     -webkit-background-clip: text;
     background-clip: text; }
   .project-jumbotron__site-container {
-    display: inline-block;
     position: absolute;
     top: 0;
     right: 26px;
-    -webkit-transform-origin: top right;
-            transform-origin: top right;
+    display: inline-block;
     -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg); }
+            transform: rotate(-90deg);
+    -webkit-transform-origin: top right;
+            transform-origin: top right; }
   .project-jumbotron__site {
     position: relative;
+    letter-spacing: 1.4px;
     text-transform: uppercase;
     color: transparent;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#697d84), color-stop(120%, #bbbcbe));
@@ -573,7 +574,6 @@ body {
     font-family: "Avenir Next", sans-serif;
     font-size: 10.5px;
     font-weight: 500;
-    letter-spacing: 1.4px;
     -webkit-background-clip: text;
     background-clip: text; }
     .project-jumbotron__site:before {
@@ -589,31 +589,53 @@ body {
       background-image: -webkit-gradient(linear, left top, left bottom, from(#9d3e8e), to(#3a2568));
       background-image: linear-gradient(to bottom, #9d3e8e, #3a2568); }
   .project-jumbotron__link {
-    font-size: 13px;
-    font-family: "Avenir Next", sans-serif;
-    color: white;
-    letter-spacing: 1.7px;
-    font-weight: 500;
+    position: relative;
+    z-index: 0;
     display: inline-block;
-    border-radius: 25px;
-    line-height: 100%;
-    padding: 19px 25px;
-    min-width: 205px;
-    text-transform: uppercase;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#9d3e8e), to(#3a2568));
-    background-image: linear-gradient(to bottom, #9d3e8e, #3a2568);
-    text-align: center;
-    text-decoration: none;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    position: relative; }
-    .project-jumbotron__link:after {
+    min-width: 205px;
+    padding: 19px 25px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 25px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9d3e8e), to(#3a2568));
+    background-image: linear-gradient(to bottom, #9d3e8e, #3a2568);
+    font-family: "Avenir Next", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 100%; }
+    .project-jumbotron__link:before {
       content: '';
       position: absolute;
+      z-index: -1;
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#9d3e8e), to(#3a2568));
+      background-image: linear-gradient(to top, #9d3e8e, #3a2568);
       width: 100%;
-      height: 63%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 25px;
+      border: 2px solid #442c7b;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      opacity: 0;
+      -webkit-transition: opacity .1s ease-in;
+      transition: opacity .1s ease-in; }
+    .project-jumbotron__link:active:before {
+      opacity: 1; }
+  .project-jumbotron__link-container {
+    position: relative; }
+    .project-jumbotron__link-container:after {
+      position: absolute;
       top: 90%;
       left: 50%;
+      width: 100%;
+      height: 63%;
+      content: '';
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%);
       background-image: radial-gradient(ellipse at 50% 60%, rgba(176, 191, 199, 0.25), rgba(255, 255, 255, 0) 50%); }
