@@ -10,6 +10,9 @@ $ff-avenir: 'Avenir Next', sans-serif;
 body {
   margin: 0;
   min-width: 1500px;
+  min-height: 880px;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .display {
@@ -25,6 +28,8 @@ body {
   background-color: #f2f4f5;
   background-image: url(../assets/imgs/bg-display.jpg);
   background-size: cover;
+
+  flex-grow: 1;
 }
 
 .dashboard {

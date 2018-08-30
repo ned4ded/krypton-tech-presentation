@@ -107,5 +107,17 @@
     text-align: center;
     text-decoration: none;
     box-sizing: border-box;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 63%;
+      top: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: radial-gradient(ellipse at 50% 60%, rgba(#b0bfc7, .25), rgba(white, 0) 50%);
+    }
   }
 }

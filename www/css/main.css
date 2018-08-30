@@ -18,7 +18,15 @@
 
 body {
   margin: 0;
-  min-width: 1500px; }
+  min-width: 1500px;
+  min-height: 880px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap; }
 
 .display {
   position: relative;
@@ -34,7 +42,10 @@ body {
   height: 100vh;
   background-color: #f2f4f5;
   background-image: url(../assets/imgs/bg-display.jpg);
-  background-size: cover; }
+  background-size: cover;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
 
 .dashboard {
   display: -webkit-box;
@@ -594,7 +605,18 @@ body {
     text-align: center;
     text-decoration: none;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+            box-sizing: border-box;
+    position: relative; }
+    .project-jumbotron__link:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 63%;
+      top: 90%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      background-image: radial-gradient(ellipse at 50% 60%, rgba(176, 191, 199, 0.25), rgba(255, 255, 255, 0) 50%); }
 
 .main-page {
   display: -webkit-box;
