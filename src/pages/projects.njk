@@ -21,15 +21,15 @@
       <div class="projects-page__slider">
         <div class="swiper-container projects-page__slider-container">
           <ul class="swiper-wrapper projects-page__slider-list">
-            <li class="swiper-slide projects-page__slider-item">
-              {{ card.make( projects.list[1], 'projects-page__project-card project-card--inactive' ) }}
+
+            {% for project in projects.list %}
+
+            <li class="swiper-slide projects-page__slider-item" data-tab-for="{{ project.className }}">
+              {{ card.make( project, 'projects-page__project-card project-card--inactive' ) }}
             </li>
-            <li class="swiper-slide projects-page__slider-item">
-              {{ card.make( projects.list[2], 'projects-page__project-card project-card--inactive' ) }}
-            </li>
-            <li class="swiper-slide projects-page__slider-item">
-              {{ card.make( projects.list[0], 'projects-page__project-card project-card--inactive' ) }}
-            </li>
+
+            {% endfor %}
+
           </ul>
         </div>
       </div>
@@ -37,7 +37,13 @@
     </div>
 
     <div class="projects-page__info">
-      {{ jumbo.make( project ) }}
+
+      {% for project in projects.list %}
+      <div class="projects-page__tab" data-tab-name="{{ project.className }}" data-tab-status="hidden">
+        {{ jumbo.make( project ) }}
+      </div>
+      {% endfor %}
+
     </div>
   </div>
   </div>

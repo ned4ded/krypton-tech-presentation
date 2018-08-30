@@ -1,4 +1,64 @@
 (() => {
+  class Tab {
+    constructor(el, duration = 400) {
+      this.instance = el;
+      this.duration = duration;
+
+      this.setStatus( el.getAttribute('data-tab-status') || 'hidden' );
+    }
+
+    setStatus( name ) {
+      switch(name) {
+        case 'hidden':
+          this.status = 'hidden';
+          this.instance.dataset.tabStatus = 'hidden';
+          break;
+        case 'hiding':
+          this.status = 'hiding';
+          this.instance.dataset.tabStatus = 'hiding';
+          break;
+        case 'visible':
+          this.status = 'visible';
+          this.instance.dataset.tabStatus = 'visible';
+          break;
+      }
+
+      return this;
+    }
+
+    hide(cb = () => {}) {
+      this.setStatus('hiding');
+
+      if(this.timer) clearTimeout(this.timer);
+
+      setTimeout(() => {
+        this.timer = null;
+
+        this.setStatus('hidden');
+
+        cb();
+      }, this.duration);
+
+      return this;
+    }
+
+    show(cb = () => {}) {
+      this.setStatus('hiding');
+
+      if(this.timer) clearTimeout(this.timer);
+
+      this.timer = setTimeout(() => {
+        this.timer = null;
+
+        this.setStatus('visible');
+
+        cb();
+      }, this.duration);
+
+      return this;
+    }
+  }
+
   class Toggler {
     constructor(el) {
       this.toggler = el;
@@ -91,12 +151,16 @@
 
   const transporters = Array.from( document.querySelectorAll('[data-transporter]')).map(e => new Transporter( e ));
 
-
   transporters.forEach(t => {
     t.setListeners();
 
     return;
   });
+
+  const tabs = Array.from( document.querySelectorAll('[data-tab-name]') ).map(e => ({
+    tab: new Tab(e, 400),
+    name: e.dataset.tabName,
+  }));
 
   var swiper = new Swiper('.swiper-container', {
     init: true,
@@ -108,15 +172,28 @@
     autoHeight: true,
     speed: 500,
     autoplay: {
-      delay: 2500,
+      delay: 3000,
     },
     on: {
       slideChange: function() {
         const prev = this.previousIndex;
         const cur = this.activeIndex;
 
-        const prevCard = this.slides[prev].querySelector('.project-card');
-        const curCard = this.slides[cur].querySelector('.project-card');
+        const prevItem = this.slides[prev];
+        const curItem = this.slides[cur];
+
+        const prevTab = tabs.find(({ name }) => prevItem.dataset.tabFor === name);
+        const curTab = tabs.find(({ name }) => curItem.dataset.tabFor === name);
+
+        if(prevTab.name !== curTab.name) {
+          prevTab.tab.hide(() => {
+            curTab.tab.show();
+          });
+        }
+
+
+        const prevCard = prevItem.querySelector('.project-card');
+        const curCard = curItem.querySelector('.project-card');
 
         prevCard.classList.remove('project-card--active');
         prevCard.classList.add('project-card--inactive');

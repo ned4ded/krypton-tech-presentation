@@ -121,4 +121,25 @@
     max-height: 159px;
     padding: 20px 35px;
   }
+
+  &__tab {
+    transition: opacity .4s ease-in;
+    opacity: 0;
+    width: 100%;
+
+    &[data-tab-status="visible"] {
+      display: block;
+      opacity: 1;
+    }
+
+    &[data-tab-status="hiding"] {
+      display: block;
+      opacity: 0;
+    }
+
+    &[data-tab-status="hidden"] {
+      display: none;
+      opacity: 0;
+    }
+  }
 }

@@ -1099,3 +1099,17 @@ body {
     min-height: auto;
     max-height: 159px;
     padding: 20px 35px; }
+  .projects-page__tab {
+    -webkit-transition: opacity .4s ease-in;
+    transition: opacity .4s ease-in;
+    opacity: 0;
+    width: 100%; }
+    .projects-page__tab[data-tab-status="visible"] {
+      display: block;
+      opacity: 1; }
+    .projects-page__tab[data-tab-status="hiding"] {
+      display: block;
+      opacity: 0; }
+    .projects-page__tab[data-tab-status="hidden"] {
+      display: none;
+      opacity: 0; }
