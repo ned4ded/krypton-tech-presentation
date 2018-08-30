@@ -889,6 +889,11 @@ body {
         margin-bottom: 25px; }
   .project__row--horizontal .project__paragraph {
     width: 50%; }
+  .project__transporter {
+    position: relative;
+    top: 0;
+    -webkit-transition: top .5s ease-in;
+    transition: top .5s ease-in; }
 
 .projects-page {
   display: -webkit-box;

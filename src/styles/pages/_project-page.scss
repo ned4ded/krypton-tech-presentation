@@ -180,4 +180,10 @@
   &__row--horizontal &__paragraph {
     width: 50%;
   }
+
+  &__transporter {
+    position: relative;
+    top: 0;
+    transition: top .5s ease-in;
+  }
 }
