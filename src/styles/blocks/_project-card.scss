@@ -17,9 +17,47 @@
   background-color: #fff;
   box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15);
 
-  &:hover,
-  &:active {
-    box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(137, 45, 162, 0.31), 0px 0 15px 0 rgba(137, 45, 162, 0.6);
+
+  &--jury-online {
+    &:hover,
+    &:active {
+      box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(137, 45, 162, 0.31), 0px 0 15px 0 rgba(137, 45, 162, 0.6);
+    }
+  }
+
+  &--swap-online {
+    &:hover,
+    &:active {
+      box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(86, 16, 218, 0.31), 0px 0 15px 0 rgba(86, 16, 218, 0.6);
+    }
+  }
+
+  &--icoadm-in {
+    &:hover,
+    &:active {
+      box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(0, 155, 210, 0.31), 0px 0 15px 0 rgba(0, 155, 210, 0.6);
+    }
+  }
+
+  &--array-io {
+    &:hover,
+    &:active {
+      box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(0, 159, 254, 0.31), 0px 0 15px 0 rgba(0, 159, 254, 0.6);
+    }
+  }
+
+  &--dialogue-key {
+    &:hover,
+    &:active {
+      box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(0, 0, 0, 0.31), 0px 0 15px 0 rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &--buzz-io {
+    &:hover,
+    &:active {
+      box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(0, 173, 239, 0.31), 0px 0 15px 0 rgba(0, 173, 239, 0.6);
+    }
   }
 
   &--inactive {
@@ -74,14 +112,14 @@
       opacity: 0;
     }
 
-    &--jury-online:before {
+    .project-card--jury-online &:before {
       background-image: url(../assets/imgs/main-page-jury-online.png);
       background-position: center 57%;
       background-repeat: no-repeat;
       background-size: 39px 52px;
     }
 
-    &--jury-online:after {
+    .project-card--jury-online &:after {
       background-image: url(../assets/imgs/main-page-jury-online-active.png);
       background-position: center;
       background-repeat: no-repeat;
@@ -89,14 +127,14 @@
       filter: brightness(2) grayscale(1);
     }
 
-    &--swap-online:before {
+    .project-card--swap-online &:before {
       background-image: url(../assets/imgs/main-page-swap-online.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 49px 46px;
     }
 
-    &--swap-online:after {
+    .project-card--swap-online &:after {
       background-image: url(../assets/imgs/main-page-swap-online-active.png);
       background-position: center;
       background-repeat: no-repeat;
@@ -104,13 +142,13 @@
       filter: brightness(2) grayscale(1);
     }
 
-    &--buzz-io:before {
+    .project-card--buzz-io &:before {
       background-image: url(../assets/imgs/main-page-buzz.io.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 33px 44px;
     }
-    &--buzz-io:after {
+    .project-card--buzz-io &:after {
       background-image: url(../assets/imgs/main-page-buzz.io-active.png);
       background-position: center;
       background-repeat: no-repeat;
@@ -118,13 +156,13 @@
       filter: brightness(1) grayscale(1);
     }
 
-    &--icoadm-in:before {
+    .project-card--icoadm-in &:before {
       background-image: url(../assets/imgs/main-page-icoadm.in.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 52px 52px;
     }
-    &--icoadm-in:after {
+    .project-card--icoadm-in &:after {
       background-image: url(../assets/imgs/main-page-icoadm.in-active.png);
       background-position: center;
       background-repeat: no-repeat;
@@ -132,13 +170,13 @@
       filter: brightness(1) grayscale(1);
     }
 
-    &--array-io:before {
+    .project-card--array-io &:before {
       background-image: url(../assets/imgs/main-page-array.io.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 70px 60px;
     }
-    &--array-io:after {
+    .project-card--array-io &:after {
       background-image: url(../assets/imgs/main-page-array.io-active.png);
       background-position: center;
       background-repeat: no-repeat;
@@ -146,13 +184,13 @@
       filter: brightness(1) grayscale(1);
     }
 
-    &--dialogue-key:before {
+    .project-card--dialogue-key &:before {
       background-image: url(../assets/imgs/main-page-dialogue.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 38px 66px;
     }
-    &--dialogue-key:after {
+    .project-card--dialogue-key &:after {
       background-image: url(../assets/imgs/main-page-dialogue-active.png);
       background-position: center;
       background-repeat: no-repeat;
@@ -161,9 +199,16 @@
     }
   }
 
-  &:hover &__icon,
-  &:active &__icon,
-  &--active &__icon {
+  @mixin bg-restyle($name) {
+    &#{$name}:hover &__icon,
+    &#{$name}:active &__icon,
+    &#{$name}.project-card--active &__icon {
+      @content;
+    }
+
+  }
+
+  @include bg-restyle('') {
     &:before {
       width: 112px;
       height: 112px;
@@ -172,57 +217,80 @@
       width: 112px;
       height: 112px;
     }
+  }
 
-    &--jury-online:before {
+  @include bg-restyle('--jury-online') {
+    &:before {
       background-size: 49.5px 63.3px;
       background-color: rgba(white, 0);
     }
-    &--jury-online:after {
+    &:after {
       background-size: 112px 112px;
       opacity: 1;
       filter: brightness(1) grayscale(0);
     }
+  }
 
-    &--swap-online:before {
+  @include bg-restyle('--swap-online') {
+    &:before {
       background-size: 62.23px 55.98px;
     }
-    &--swap-online:after {
+    &:after {
       background-size: 62.23px 55.98px;
       opacity: 1;
       filter: brightness(1) grayscale(0);
     }
+  }
 
-    &--buzz-io:before {
+  @include bg-restyle('--buzz-io') {
+    &:before {
       background-size: #{(33px * 1.217)} #{(44px * 1.217)};
     }
-    &--buzz-io:after {
+    &:after {
       background-size: #{(33px * 1.217)} #{(44px * 1.217)};
       opacity: 1;
       filter: brightness(1) grayscale(0);
     }
+  }
 
-    &--icoadm-in:before {
+  @include bg-restyle('--icoadm-in') {
+    &:before {
       background-size: #{(52px * 1.217)} #{(52px * 1.217)};
     }
-    &--icoadm-in:after {
+    &:after {
       background-size: #{(52px * 1.217)} #{(52px * 1.217)};
       opacity: 1;
       filter: brightness(1) grayscale(0);
     }
+  }
 
-    &--array-io:before {
+  @include bg-restyle('--icoadm-in') {
+    &:before {
+      background-size: #{(52px * 1.217)} #{(52px * 1.217)};
+    }
+    &:after {
+      background-size: #{(52px * 1.217)} #{(52px * 1.217)};
+      opacity: 1;
+      filter: brightness(1) grayscale(0);
+    }
+  }
+
+  @include bg-restyle('--array-io') {
+    &:before {
       background-size: #{(70px * 1.217)} #{(60px * 1.217)};
     }
-    &--array-io:after {
+    &:after {
       background-size: #{(70px * 1.217)} #{(60px * 1.217)};
       opacity: 1;
       filter: brightness(1) grayscale(0);
     }
+  }
 
-    &--dialogue-key:before {
+  @include bg-restyle('--dialogue-key') {
+    &:before {
       background-size: #{(38px * 1.217)} #{(66px * 1.217)};
     }
-    &--dialogue-key:after {
+    &:after {
       background-size: #{(38px * 1.217)} #{(66px * 1.217)};
       opacity: 1;
       filter: brightness(1) grayscale(0);
@@ -266,12 +334,38 @@
     @include bg-clip-text;
   }
 
-  &:hover &__name,
-  &:hover &__descr,
-  &:active &__name,
-  &:active &__descr,
-  &--active &__name,
-  &--active &__descr {
+  @mixin text-restyle($name) {
+    &#{$name}:hover &__name,
+    &#{$name}:hover &__descr,
+    &#{$name}:active &__name,
+    &#{$name}:active &__descr,
+    &#{$name}.project-card--active &__name,
+    &#{$name}.project-card--active &__descr {
+      @content
+    }
+  };
+
+  @include text-restyle('--jury-online') {
     color: #423045;
+  }
+
+  @include text-restyle('--swap-online') {
+    color: darken(rgb(80, 14, 216), 20%);
+  }
+
+  @include text-restyle('--buzz-io') {
+    color: darken(rgb(0, 173, 239), 20%);
+  }
+
+  @include text-restyle('--icoadm-in') {
+    color: darken(rgb(0, 155, 210), 20%);
+  }
+
+  @include text-restyle('--array-io') {
+    color: darken(rgb(5, 83, 225), 10%);
+  }
+
+  @include text-restyle('--dialogue-key') {
+    color: black;
   }
 }

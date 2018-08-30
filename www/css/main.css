@@ -265,9 +265,24 @@ body {
   background-color: #fff;
   -webkit-box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15);
           box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15); }
-  .project-card:hover, .project-card:active {
+  .project-card--jury-online:hover, .project-card--jury-online:active {
     -webkit-box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(137, 45, 162, 0.31), 0px 0 15px 0 rgba(137, 45, 162, 0.6);
             box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(137, 45, 162, 0.31), 0px 0 15px 0 rgba(137, 45, 162, 0.6); }
+  .project-card--swap-online:hover, .project-card--swap-online:active {
+    -webkit-box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(86, 16, 218, 0.31), 0px 0 15px 0 rgba(86, 16, 218, 0.6);
+            box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(86, 16, 218, 0.31), 0px 0 15px 0 rgba(86, 16, 218, 0.6); }
+  .project-card--icoadm-in:hover, .project-card--icoadm-in:active {
+    -webkit-box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(0, 155, 210, 0.31), 0px 0 15px 0 rgba(0, 155, 210, 0.6);
+            box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(0, 155, 210, 0.31), 0px 0 15px 0 rgba(0, 155, 210, 0.6); }
+  .project-card--array-io:hover, .project-card--array-io:active {
+    -webkit-box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(0, 159, 254, 0.31), 0px 0 15px 0 rgba(0, 159, 254, 0.6);
+            box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(0, 159, 254, 0.31), 0px 0 15px 0 rgba(0, 159, 254, 0.6); }
+  .project-card--dialogue-key:hover, .project-card--dialogue-key:active {
+    -webkit-box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(0, 0, 0, 0.31), 0px 0 15px 0 rgba(0, 0, 0, 0.6);
+            box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(0, 0, 0, 0.31), 0px 0 15px 0 rgba(0, 0, 0, 0.6); }
+  .project-card--buzz-io:hover, .project-card--buzz-io:active {
+    -webkit-box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(0, 173, 239, 0.31), 0px 0 15px 0 rgba(0, 173, 239, 0.6);
+            box-shadow: 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 46px 0 rgba(86, 112, 132, 0.15), 0px 2px 30px 0 rgba(0, 173, 239, 0.31), 0px 0 15px 0 rgba(0, 173, 239, 0.6); }
   .project-card--inactive {
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -320,72 +335,72 @@ body {
       transition: width ease-in .2s, height ease-in .2s, background-size ease-in .2s, opacity ease-in .2s, filter ease-in .2s, -webkit-filter ease-in .2s;
       border-radius: 100%;
       opacity: 0; }
-    .project-card__icon--jury-online:before {
+    .project-card--jury-online .project-card__icon:before {
       background-image: url(../assets/imgs/main-page-jury-online.png);
       background-position: center 57%;
       background-repeat: no-repeat;
       background-size: 39px 52px; }
-    .project-card__icon--jury-online:after {
+    .project-card--jury-online .project-card__icon:after {
       background-image: url(../assets/imgs/main-page-jury-online-active.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 92px 92px;
       -webkit-filter: brightness(2) grayscale(1);
               filter: brightness(2) grayscale(1); }
-    .project-card__icon--swap-online:before {
+    .project-card--swap-online .project-card__icon:before {
       background-image: url(../assets/imgs/main-page-swap-online.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 49px 46px; }
-    .project-card__icon--swap-online:after {
+    .project-card--swap-online .project-card__icon:after {
       background-image: url(../assets/imgs/main-page-swap-online-active.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 49px 46px;
       -webkit-filter: brightness(2) grayscale(1);
               filter: brightness(2) grayscale(1); }
-    .project-card__icon--buzz-io:before {
+    .project-card--buzz-io .project-card__icon:before {
       background-image: url(../assets/imgs/main-page-buzz.io.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 33px 44px; }
-    .project-card__icon--buzz-io:after {
+    .project-card--buzz-io .project-card__icon:after {
       background-image: url(../assets/imgs/main-page-buzz.io-active.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 33px 44px;
       -webkit-filter: brightness(1) grayscale(1);
               filter: brightness(1) grayscale(1); }
-    .project-card__icon--icoadm-in:before {
+    .project-card--icoadm-in .project-card__icon:before {
       background-image: url(../assets/imgs/main-page-icoadm.in.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 52px 52px; }
-    .project-card__icon--icoadm-in:after {
+    .project-card--icoadm-in .project-card__icon:after {
       background-image: url(../assets/imgs/main-page-icoadm.in-active.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 52px 52px;
       -webkit-filter: brightness(1) grayscale(1);
               filter: brightness(1) grayscale(1); }
-    .project-card__icon--array-io:before {
+    .project-card--array-io .project-card__icon:before {
       background-image: url(../assets/imgs/main-page-array.io.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 70px 60px; }
-    .project-card__icon--array-io:after {
+    .project-card--array-io .project-card__icon:after {
       background-image: url(../assets/imgs/main-page-array.io-active.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 70px 60px;
       -webkit-filter: brightness(1) grayscale(1);
               filter: brightness(1) grayscale(1); }
-    .project-card__icon--dialogue-key:before {
+    .project-card--dialogue-key .project-card__icon:before {
       background-image: url(../assets/imgs/main-page-dialogue.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 38px 66px; }
-    .project-card__icon--dialogue-key:after {
+    .project-card--dialogue-key .project-card__icon:after {
       background-image: url(../assets/imgs/main-page-dialogue-active.png);
       background-position: center;
       background-repeat: no-repeat;
@@ -394,77 +409,88 @@ body {
               filter: brightness(1) grayscale(1); }
   .project-card:hover .project-card__icon:before,
   .project-card:active .project-card__icon:before,
-  .project-card--active .project-card__icon:before {
+  .project-card.project-card--active .project-card__icon:before {
     width: 112px;
     height: 112px; }
   .project-card:hover .project-card__icon:after,
   .project-card:active .project-card__icon:after,
-  .project-card--active .project-card__icon:after {
+  .project-card.project-card--active .project-card__icon:after {
     width: 112px;
     height: 112px; }
-  .project-card:hover .project-card__icon--jury-online:before,
-  .project-card:active .project-card__icon--jury-online:before,
-  .project-card--active .project-card__icon--jury-online:before {
+  .project-card--jury-online:hover .project-card__icon:before,
+  .project-card--jury-online:active .project-card__icon:before,
+  .project-card--jury-online.project-card--active .project-card__icon:before {
     background-size: 49.5px 63.3px;
     background-color: rgba(255, 255, 255, 0); }
-  .project-card:hover .project-card__icon--jury-online:after,
-  .project-card:active .project-card__icon--jury-online:after,
-  .project-card--active .project-card__icon--jury-online:after {
+  .project-card--jury-online:hover .project-card__icon:after,
+  .project-card--jury-online:active .project-card__icon:after,
+  .project-card--jury-online.project-card--active .project-card__icon:after {
     background-size: 112px 112px;
     opacity: 1;
     -webkit-filter: brightness(1) grayscale(0);
             filter: brightness(1) grayscale(0); }
-  .project-card:hover .project-card__icon--swap-online:before,
-  .project-card:active .project-card__icon--swap-online:before,
-  .project-card--active .project-card__icon--swap-online:before {
+  .project-card--swap-online:hover .project-card__icon:before,
+  .project-card--swap-online:active .project-card__icon:before,
+  .project-card--swap-online.project-card--active .project-card__icon:before {
     background-size: 62.23px 55.98px; }
-  .project-card:hover .project-card__icon--swap-online:after,
-  .project-card:active .project-card__icon--swap-online:after,
-  .project-card--active .project-card__icon--swap-online:after {
+  .project-card--swap-online:hover .project-card__icon:after,
+  .project-card--swap-online:active .project-card__icon:after,
+  .project-card--swap-online.project-card--active .project-card__icon:after {
     background-size: 62.23px 55.98px;
     opacity: 1;
     -webkit-filter: brightness(1) grayscale(0);
             filter: brightness(1) grayscale(0); }
-  .project-card:hover .project-card__icon--buzz-io:before,
-  .project-card:active .project-card__icon--buzz-io:before,
-  .project-card--active .project-card__icon--buzz-io:before {
+  .project-card--buzz-io:hover .project-card__icon:before,
+  .project-card--buzz-io:active .project-card__icon:before,
+  .project-card--buzz-io.project-card--active .project-card__icon:before {
     background-size: 40.161px 53.548px; }
-  .project-card:hover .project-card__icon--buzz-io:after,
-  .project-card:active .project-card__icon--buzz-io:after,
-  .project-card--active .project-card__icon--buzz-io:after {
+  .project-card--buzz-io:hover .project-card__icon:after,
+  .project-card--buzz-io:active .project-card__icon:after,
+  .project-card--buzz-io.project-card--active .project-card__icon:after {
     background-size: 40.161px 53.548px;
     opacity: 1;
     -webkit-filter: brightness(1) grayscale(0);
             filter: brightness(1) grayscale(0); }
-  .project-card:hover .project-card__icon--icoadm-in:before,
-  .project-card:active .project-card__icon--icoadm-in:before,
-  .project-card--active .project-card__icon--icoadm-in:before {
+  .project-card--icoadm-in:hover .project-card__icon:before,
+  .project-card--icoadm-in:active .project-card__icon:before,
+  .project-card--icoadm-in.project-card--active .project-card__icon:before {
     background-size: 63.284px 63.284px; }
-  .project-card:hover .project-card__icon--icoadm-in:after,
-  .project-card:active .project-card__icon--icoadm-in:after,
-  .project-card--active .project-card__icon--icoadm-in:after {
+  .project-card--icoadm-in:hover .project-card__icon:after,
+  .project-card--icoadm-in:active .project-card__icon:after,
+  .project-card--icoadm-in.project-card--active .project-card__icon:after {
     background-size: 63.284px 63.284px;
     opacity: 1;
     -webkit-filter: brightness(1) grayscale(0);
             filter: brightness(1) grayscale(0); }
-  .project-card:hover .project-card__icon--array-io:before,
-  .project-card:active .project-card__icon--array-io:before,
-  .project-card--active .project-card__icon--array-io:before {
+  .project-card--icoadm-in:hover .project-card__icon:before,
+  .project-card--icoadm-in:active .project-card__icon:before,
+  .project-card--icoadm-in.project-card--active .project-card__icon:before {
+    background-size: 63.284px 63.284px; }
+  .project-card--icoadm-in:hover .project-card__icon:after,
+  .project-card--icoadm-in:active .project-card__icon:after,
+  .project-card--icoadm-in.project-card--active .project-card__icon:after {
+    background-size: 63.284px 63.284px;
+    opacity: 1;
+    -webkit-filter: brightness(1) grayscale(0);
+            filter: brightness(1) grayscale(0); }
+  .project-card--array-io:hover .project-card__icon:before,
+  .project-card--array-io:active .project-card__icon:before,
+  .project-card--array-io.project-card--active .project-card__icon:before {
     background-size: 85.19px 73.02px; }
-  .project-card:hover .project-card__icon--array-io:after,
-  .project-card:active .project-card__icon--array-io:after,
-  .project-card--active .project-card__icon--array-io:after {
+  .project-card--array-io:hover .project-card__icon:after,
+  .project-card--array-io:active .project-card__icon:after,
+  .project-card--array-io.project-card--active .project-card__icon:after {
     background-size: 85.19px 73.02px;
     opacity: 1;
     -webkit-filter: brightness(1) grayscale(0);
             filter: brightness(1) grayscale(0); }
-  .project-card:hover .project-card__icon--dialogue-key:before,
-  .project-card:active .project-card__icon--dialogue-key:before,
-  .project-card--active .project-card__icon--dialogue-key:before {
+  .project-card--dialogue-key:hover .project-card__icon:before,
+  .project-card--dialogue-key:active .project-card__icon:before,
+  .project-card--dialogue-key.project-card--active .project-card__icon:before {
     background-size: 46.246px 80.322px; }
-  .project-card:hover .project-card__icon--dialogue-key:after,
-  .project-card:active .project-card__icon--dialogue-key:after,
-  .project-card--active .project-card__icon--dialogue-key:after {
+  .project-card--dialogue-key:hover .project-card__icon:after,
+  .project-card--dialogue-key:active .project-card__icon:after,
+  .project-card--dialogue-key.project-card--active .project-card__icon:after {
     background-size: 46.246px 80.322px;
     opacity: 1;
     -webkit-filter: brightness(1) grayscale(0);
@@ -501,13 +527,48 @@ body {
     font-size: 15px;
     -webkit-background-clip: text;
     background-clip: text; }
-  .project-card:hover .project-card__name,
-  .project-card:hover .project-card__descr,
-  .project-card:active .project-card__name,
-  .project-card:active .project-card__descr,
-  .project-card--active .project-card__name,
-  .project-card--active .project-card__descr {
+  .project-card--jury-online:hover .project-card__name,
+  .project-card--jury-online:hover .project-card__descr,
+  .project-card--jury-online:active .project-card__name,
+  .project-card--jury-online:active .project-card__descr,
+  .project-card--jury-online.project-card--active .project-card__name,
+  .project-card--jury-online.project-card--active .project-card__descr {
     color: #423045; }
+  .project-card--swap-online:hover .project-card__name,
+  .project-card--swap-online:hover .project-card__descr,
+  .project-card--swap-online:active .project-card__name,
+  .project-card--swap-online:active .project-card__descr,
+  .project-card--swap-online.project-card--active .project-card__name,
+  .project-card--swap-online.project-card--active .project-card__descr {
+    color: #2d0878; }
+  .project-card--buzz-io:hover .project-card__name,
+  .project-card--buzz-io:hover .project-card__descr,
+  .project-card--buzz-io:active .project-card__name,
+  .project-card--buzz-io:active .project-card__descr,
+  .project-card--buzz-io.project-card--active .project-card__name,
+  .project-card--buzz-io.project-card--active .project-card__descr {
+    color: #006389; }
+  .project-card--icoadm-in:hover .project-card__name,
+  .project-card--icoadm-in:hover .project-card__descr,
+  .project-card--icoadm-in:active .project-card__name,
+  .project-card--icoadm-in:active .project-card__descr,
+  .project-card--icoadm-in.project-card--active .project-card__name,
+  .project-card--icoadm-in.project-card--active .project-card__descr {
+    color: #00506c; }
+  .project-card--array-io:hover .project-card__name,
+  .project-card--array-io:hover .project-card__descr,
+  .project-card--array-io:active .project-card__name,
+  .project-card--array-io:active .project-card__descr,
+  .project-card--array-io.project-card--active .project-card__name,
+  .project-card--array-io.project-card--active .project-card__descr {
+    color: #0441af; }
+  .project-card--dialogue-key:hover .project-card__name,
+  .project-card--dialogue-key:hover .project-card__descr,
+  .project-card--dialogue-key:active .project-card__name,
+  .project-card--dialogue-key:active .project-card__descr,
+  .project-card--dialogue-key.project-card--active .project-card__name,
+  .project-card--dialogue-key.project-card--active .project-card__descr {
+    color: black; }
 
 .project-jumbotron {
   position: relative;
