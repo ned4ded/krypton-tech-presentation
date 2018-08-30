@@ -8,6 +8,39 @@
 
   &__logo {
     text-align: center;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 100%;
+      width: 400px;
+      height: 170px;
+      background-image: radial-gradient(rgba(124, 240, 222, .25), rgba(124, 240, 222, 0) 75%);
+    }
+
+    &-divider {
+      position: absolute;
+      height: 4px;
+      width: calc( calc(100% - 360px) * 0.41);
+      top: 50%;
+      transform: translateY(-50%);
+
+      &--position {
+        &--left {
+          background-image: linear-gradient(to right, #f1f6f6, #1b3056);
+          left: 6%;
+        }
+        &--right {
+          background-image: linear-gradient(to left, #f1f6f6, #1b3056);
+          right: 6%;
+        }
+      }
+    }
   }
 
   &__projects {

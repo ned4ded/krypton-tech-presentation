@@ -17,7 +17,8 @@
   src: local("Avenir Next Light"), local("Avenir-Next-Light"), url(../assets/fonts/avenir-next-light.woff2) format("woff2"); }
 
 body {
-  margin: 0; }
+  margin: 0;
+  min-width: 1500px; }
 
 .display {
   position: relative;
@@ -499,7 +500,35 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   .main-page__logo {
-    text-align: center; }
+    text-align: center;
+    position: relative; }
+    .main-page__logo:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      border-radius: 100%;
+      width: 400px;
+      height: 170px;
+      background-image: radial-gradient(rgba(124, 240, 222, 0.25), rgba(124, 240, 222, 0) 75%); }
+    .main-page__logo-divider {
+      position: absolute;
+      height: 4px;
+      width: calc( calc(100% - 360px) * 0.41);
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+      .main-page__logo-divider--position--left {
+        background-image: -webkit-gradient(linear, left top, right top, from(#f1f6f6), to(#1b3056));
+        background-image: linear-gradient(to right, #f1f6f6, #1b3056);
+        left: 6%; }
+      .main-page__logo-divider--position--right {
+        background-image: -webkit-gradient(linear, right top, left top, from(#f1f6f6), to(#1b3056));
+        background-image: linear-gradient(to left, #f1f6f6, #1b3056);
+        right: 6%; }
   .main-page__projects {
     display: -webkit-box;
     display: -ms-flexbox;

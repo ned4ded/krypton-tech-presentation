@@ -1,0 +1,8 @@
+{
+  "repeat": [
+    {
+      "name": "project.njk",
+      "dataset": "dataset/projects.set.njk"
+    }
+  ]
+}
