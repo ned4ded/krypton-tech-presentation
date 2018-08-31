@@ -57,6 +57,10 @@
 
       return this;
     }
+
+    isVisible() {
+      return this.status === 'visible' ? true : false;
+    }
   }
 
   class Toggler {
@@ -162,47 +166,59 @@
     name: e.dataset.tabName,
   }));
 
-  var swiper = new Swiper('.swiper-container', {
-    init: true,
-    direction: 'vertical',
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 0,
-    centeredSlides: true,
-    autoHeight: true,
-    speed: 500,
-    autoplay: {
-      delay: 3000,
-    },
-    on: {
-      slideChange: function() {
-        const prev = this.previousIndex;
-        const cur = this.activeIndex;
+  if(document.querySelectorAll('.swiper-container').length) (function() {
+    const swiper = new Swiper('.swiper-container', {
+      init: false,
+      direction: 'vertical',
+      slidesPerView: 3,
+      spaceBetween: 0,
+      centeredSlides: true,
+      autoHeight: true,
+      loop: true,
+      speed: 500,
+      autoplay: {
+        delay: 3000,
+      },
+      slideToClickedSlide: true,
+      on: {
+        slideChange: function() {
+          const prev = this.previousIndex;
+          const cur = this.activeIndex;
 
-        const prevItem = this.slides[prev];
-        const curItem = this.slides[cur];
+          const prevItem = this.slides[prev];
+          const curItem = this.slides[cur];
 
-        const prevTab = tabs.find(({ name }) => prevItem.dataset.tabFor === name);
-        const curTab = tabs.find(({ name }) => curItem.dataset.tabFor === name);
+          const prevTab = tabs.find(({ name }) => prevItem.dataset.tabFor === name);
+          const curTab = tabs.find(({ name }) => curItem.dataset.tabFor === name);
 
-        if(prevTab.name !== curTab.name) {
-          prevTab.tab.hide(() => {
-            curTab.tab.show();
-          });
-        }
+          if(prevTab.name !== curTab.name) {
+            prevTab.tab.hide(() => {
+              curTab.tab.show();
+            });
+          }
 
 
-        const prevCard = prevItem.querySelector('.project-card');
-        const curCard = curItem.querySelector('.project-card');
+          const prevCard = prevItem.querySelector('.project-card');
+          const curCard = curItem.querySelector('.project-card');
 
-        prevCard.classList.remove('project-card--active');
-        prevCard.classList.add('project-card--inactive');
+          prevCard.classList.remove('project-card--active');
+          prevCard.classList.add('project-card--inactive');
 
-        curCard.classList.remove('project-card--inactive');
-        curCard.classList.add('project-card--active');
+          curCard.classList.remove('project-card--inactive');
+          curCard.classList.add('project-card--active');
 
-        return;
-      }
-    },
-  });
+          return;
+        },
+        click: function() {
+          setTimeout(() => {
+            if(!swiper.autoplay.running) swiper.autoplay.start();
+
+            return;
+          }, 3000);
+        },
+      },
+    });
+
+    swiper.init();
+  })();
 })();

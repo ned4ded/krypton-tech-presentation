@@ -25,7 +25,7 @@
             {% for project in projects.list %}
 
             <li class="swiper-slide projects-page__slider-item" data-tab-for="{{ project.className }}">
-              {{ card.make( project, 'projects-page__project-card project-card--inactive' ) }}
+              {{ card.make( project, 'projects-page__project-card project-card--inactive', false ) }}
             </li>
 
             {% endfor %}
@@ -40,7 +40,8 @@
 
       {% for project in projects.list %}
       <div class="projects-page__tab" data-tab-name="{{ project.className }}" data-tab-status="hidden">
-        {{ jumbo.make( project ) }}
+        {% set className = 'project-jumbotron--' + project.className %}
+        {{ jumbo.make( project, className ) }}
       </div>
       {% endfor %}
 

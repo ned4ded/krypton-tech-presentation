@@ -649,6 +649,21 @@ body {
               transform: translateY(-50%);
       background-image: -webkit-gradient(linear, left top, left bottom, from(#9d3e8e), to(#3a2568));
       background-image: linear-gradient(to bottom, #9d3e8e, #3a2568); }
+      .project-jumbotron--swap-online .project-jumbotron__site:before {
+        background-image: -webkit-gradient(linear, left top, right top, from(#8b4ee0), to(#4c0dce));
+        background-image: linear-gradient(to right, #8b4ee0, #4c0dce); }
+      .project-jumbotron--buzz-io .project-jumbotron__site:before {
+        background-image: -webkit-gradient(linear, left top, right top, from(#00b8fe), to(#0076a3));
+        background-image: linear-gradient(to right, #00b8fe, #0076a3); }
+      .project-jumbotron--icoadm-in .project-jumbotron__site:before {
+        background-image: -webkit-gradient(linear, left top, right top, from(#4dbde1), to(#1e8fb4));
+        background-image: linear-gradient(to right, #4dbde1, #1e8fb4); }
+      .project-jumbotron--array-io .project-jumbotron__site:before {
+        background-image: -webkit-gradient(linear, left top, right top, from(#0ca3ff), to(#014acc));
+        background-image: linear-gradient(to right, #0ca3ff, #014acc); }
+      .project-jumbotron--dialogue-key .project-jumbotron__site:before {
+        background-image: -webkit-gradient(linear, left top, right top, from(#646464), to(#3c3c3c));
+        background-image: linear-gradient(to right, #646464, #3c3c3c); }
   .project-jumbotron__link {
     position: relative;
     z-index: 0;
@@ -686,6 +701,41 @@ body {
       border-radius: 25px;
       background-image: -webkit-gradient(linear, left bottom, left top, from(#9d3e8e), to(#3a2568));
       background-image: linear-gradient(to top, #9d3e8e, #3a2568); }
+    .project-jumbotron--swap-online .project-jumbotron__link {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#8b4ee0), to(#4c0dce));
+      background-image: linear-gradient(to bottom, #8b4ee0, #4c0dce); }
+      .project-jumbotron--swap-online .project-jumbotron__link:before {
+        background-image: -webkit-gradient(linear, left bottom, left top, from(#8e52e1), to(#4c0dce));
+        background-image: linear-gradient(to top, #8e52e1, #4c0dce);
+        border: 2px solid #440cb6; }
+    .project-jumbotron--buzz-io .project-jumbotron__link {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#00b8fe), to(#0076a3));
+      background-image: linear-gradient(to bottom, #00b8fe, #0076a3); }
+      .project-jumbotron--buzz-io .project-jumbotron__link:before {
+        background-image: -webkit-gradient(linear, left bottom, left top, from(#00b8fe), to(#0076a3));
+        background-image: linear-gradient(to top, #00b8fe, #0076a3);
+        border: 2px solid #005c7f; }
+    .project-jumbotron--icoadm-in .project-jumbotron__link {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#4dbde1), to(#1e8fb4));
+      background-image: linear-gradient(to bottom, #4dbde1, #1e8fb4); }
+      .project-jumbotron--icoadm-in .project-jumbotron__link:before {
+        background-image: -webkit-gradient(linear, left bottom, left top, from(#4dbde1), to(#1e8fb4));
+        background-image: linear-gradient(to top, #4dbde1, #1e8fb4);
+        border: 2px solid #197796; }
+    .project-jumbotron--array-io .project-jumbotron__link {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#0ca3ff), to(#014acc));
+      background-image: linear-gradient(to bottom, #0ca3ff, #014acc); }
+      .project-jumbotron--array-io .project-jumbotron__link:before {
+        background-image: -webkit-gradient(linear, left bottom, left top, from(#0ca3ff), to(#014acc));
+        background-image: linear-gradient(to top, #0ca3ff, #014acc);
+        border: 2px solid #0146c1; }
+    .project-jumbotron--dialogue-key .project-jumbotron__link {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#646464), to(#3c3c3c));
+      background-image: linear-gradient(to bottom, #646464, #3c3c3c); }
+      .project-jumbotron--dialogue-key .project-jumbotron__link:before {
+        background-image: -webkit-gradient(linear, left bottom, left top, from(#646464), to(#3c3c3c));
+        background-image: linear-gradient(to top, #646464, #3c3c3c);
+        border: 2px solid #2a2a2a; }
     .project-jumbotron__link:active:before {
       opacity: 1; }
   .project-jumbotron__link-container {

@@ -91,7 +91,28 @@
       transform: translateY(-50%);
 
       background-image: linear-gradient(to bottom, #9d3e8e, #3a2568);
+
+      .project-jumbotron--swap-online & {
+        background-image: linear-gradient(to right, lighten(rgb(133, 69, 223), 2%), darken(rgb(80, 14, 216), 2%));
+      }
+
+      .project-jumbotron--buzz-io & {
+        background-image: linear-gradient(to right, lighten(rgb(0, 173, 239), 3%), darken(rgb(0, 173, 239), 15%));
+      }
+
+      .project-jumbotron--icoadm-in & {
+        background-image: linear-gradient(to right, lighten(rgb(64, 184, 223), 3%), darken(rgb(64, 184, 223), 15%));
+      }
+
+      .project-jumbotron--array-io & {
+        background-image: linear-gradient(to right, lighten(rgb(0, 156, 252), 3%), darken(rgb(1, 83, 229), 5%));
+      }
+
+      .project-jumbotron--dialogue-key & {
+        background-image: linear-gradient(to right, lighten(rgb(100, 100, 100), 0%), darken(rgb(60, 60, 60), 0%));
+      }
     }
+
   }
 
   &__link {
@@ -135,6 +156,51 @@
       border: 2px solid lighten(#3a2568, 5%);
       border-radius: 25px;
       background-image: linear-gradient(to top, #9d3e8e, #3a2568);
+    }
+
+    .project-jumbotron--swap-online & {
+      background-image: linear-gradient(to bottom, lighten(rgb(133, 69, 223), 2%), darken(rgb(80, 14, 216), 2%));
+
+      &:before {
+        background-image: linear-gradient(to top, lighten(rgb(133, 69, 223), 3%), darken(rgb(80, 14, 216), 2%));
+        border: 2px solid darken(rgb(80, 14, 216), 7%);
+      }
+    }
+
+    .project-jumbotron--buzz-io & {
+      background-image: linear-gradient(to bottom, lighten(rgb(0, 173, 239), 3%), darken(rgb(0, 173, 239), 15%));
+
+      &:before {
+        background-image: linear-gradient(to top, lighten(rgb(0, 173, 239), 3%), darken(rgb(0, 173, 239), 15%));
+        border: 2px solid darken(rgb(0, 173, 239), 22%);
+      }
+    }
+
+    .project-jumbotron--icoadm-in & {
+      background-image: linear-gradient(to bottom, lighten(rgb(64, 184, 223), 3%), darken(rgb(64, 184, 223), 15%));
+
+      &:before {
+        background-image: linear-gradient(to top, lighten(rgb(64, 184, 223), 3%), darken(rgb(64, 184, 223), 15%));
+        border: 2px solid darken(rgb(64, 184, 223), 22%);
+      }
+    }
+
+    .project-jumbotron--array-io & {
+      background-image: linear-gradient(to bottom, lighten(rgb(0, 156, 252), 3%), darken(rgb(1, 83, 229), 5%));
+
+      &:before {
+        background-image: linear-gradient(to top, lighten(rgb(0, 156, 252), 3%), darken(rgb(1, 83, 229), 5%));
+        border: 2px solid darken(rgb(1, 83, 229), 7%);
+      }
+    }
+
+    .project-jumbotron--dialogue-key & {
+      background-image: linear-gradient(to bottom, lighten(rgb(100, 100, 100), 0%), darken(rgb(60, 60, 60), 0%));
+
+      &:before {
+        background-image: linear-gradient(to top, lighten(rgb(100, 100, 100), 0%), darken(rgb(60, 60, 60), 0%));
+        border: 2px solid darken(rgb(60, 60, 60), 7%);
+      }
     }
 
     &:active:before {

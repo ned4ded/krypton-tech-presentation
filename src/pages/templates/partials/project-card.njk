@@ -1,5 +1,5 @@
-{% macro make(project, mods = false) %}
-  <a class="project-card project-card--{{ project.className }}{{ ' ' + mods if mods}}" href="{{ project.link }}">
+{% macro make(project, mods = false, isHref = true) %}
+  <a class="project-card project-card--{{ project.className }}{{ ' ' + mods if mods}}" {{'href=' + project.link if isHref}}>
     <span class="project-card__icon"></span>
 
     <p class="project-card__info">
