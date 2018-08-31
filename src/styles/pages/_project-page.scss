@@ -53,6 +53,7 @@
     height: 80px;
 
     text-align: center;
+    position: relative;
   }
 
   &__faded-btn {
@@ -61,9 +62,13 @@
     text-align: center;
     letter-spacing: 1.1px;
     font-size: 12px;
-    color: rgba(#2a2829, .4);
-    border-color: rgba(#2a2829, .2);
+    color: black;
+    border-width: 1px;
+    border-color: lighten(black, 50%);
+    font-weight: 300;
     cursor: pointer;
+    position: absolute;
+    bottom: 0;
   }
 
 

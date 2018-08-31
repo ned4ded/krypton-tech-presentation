@@ -904,15 +904,20 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     height: 80px;
-    text-align: center; }
+    text-align: center;
+    position: relative; }
   .project__faded-btn {
     min-width: 365px;
     text-align: center;
     letter-spacing: 1.1px;
     font-size: 12px;
-    color: rgba(42, 40, 41, 0.4);
-    border-color: rgba(42, 40, 41, 0.2);
-    cursor: pointer; }
+    color: black;
+    border-width: 1px;
+    border-color: gray;
+    font-weight: 300;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0; }
   .project__info {
     display: -webkit-box;
     display: -ms-flexbox;
