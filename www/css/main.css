@@ -33,7 +33,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: auto;
+  overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
@@ -69,6 +69,13 @@ body {
     max-height: 735px; }
     .dashboard__container--projects {
       max-height: 780px; }
+    .dashboard__container--project {
+      padding: 100px 175px 0;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      max-height: 100%;
+      max-width: 100%;
+      overflow: auto; }
 
 .content {
   position: relative;
@@ -82,7 +89,8 @@ body {
           flex-flow: row nowrap;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
-          flex-grow: 1; }
+          flex-grow: 1;
+  overflow-y: auto; }
 
 .faded-btn {
   font-size: 14px;
@@ -837,8 +845,7 @@ body {
   overflow-y: hidden;
   width: 100%;
   max-width: 1185px;
-  margin: auto;
-  height: 735px; }
+  margin: auto; }
   .project__page {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -153,13 +153,13 @@
 
   const togglers = Array.from( document.querySelectorAll('[data-target]') ).map(e => new Toggler( e ));
 
-  const transporters = Array.from( document.querySelectorAll('[data-transporter]')).map(e => new Transporter( e ));
-
-  transporters.forEach(t => {
-    t.setListeners();
-
-    return;
-  });
+  // const transporters = Array.from( document.querySelectorAll('[data-transporter]')).map(e => new Transporter( e ));
+  //
+  // transporters.forEach(t => {
+  //   t.setListeners();
+  //
+  //   return;
+  // });
 
   const tabs = Array.from( document.querySelectorAll('[data-tab-name]') ).map(e => ({
     tab: new Tab(e, 400),

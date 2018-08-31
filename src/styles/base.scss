@@ -19,7 +19,7 @@ body {
   position: relative;
 
   display: flex;
-  overflow: auto;
+  overflow: hidden;
   flex-flow: column nowrap;
 
   width: 100%;
@@ -49,6 +49,14 @@ body {
     &--projects {
       max-height: 780px;
     }
+
+    &--project {
+      padding: 100px 175px 0;
+      box-sizing: border-box;
+      max-height: 100%;
+      max-width: 100%;
+      overflow: auto;
+    }
   }
 }
 
@@ -59,6 +67,8 @@ body {
   display: flex;
   flex-flow: row nowrap;
   flex-grow: 1;
+
+  overflow-y: auto;
 }
 
 .faded-btn {
