@@ -6,6 +6,7 @@
   flex-flow: column nowrap;
 
   width: 100%;
+  max-width: 750px;
   padding-top: 88px;
 
   &__logotype {
@@ -26,6 +27,7 @@
     font-size: 16.5px;
     font-weight: 500;
     line-height: 100%;
+    text-align: center;
 
     @include bg-clip-text;
   }
@@ -46,6 +48,10 @@
     font-weight: 300;
     line-height: 100%;
     line-height: 1.6;
+
+    .project-jumbotron--dialogue-key & {
+      max-width: 100%;
+    }
 
     @include bg-clip-text;
   }

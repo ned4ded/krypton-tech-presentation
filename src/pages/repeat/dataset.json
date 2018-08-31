@@ -1,62 +1,169 @@
 [
   {
+    "name": "icoadm.in",
+    "className": "icoadm-in",
+    "site": "www.icoadm.in",
+    "logo": {
+      "name": "icoadm-in-logotype.png",
+      "width": 514,
+      "height": 320
+    },
+    "longDescr": "Программное обеспечение для проведения краудсейла с самым высоким уровнем защиты",
+    "slogan": "Личные кабинеты для инвесторов с возможностью кастомизации и смарт-контракты",
+    "shortText" : [
+      {
+        "shortcut" : "ICOAdm.in — полноценное программное обеспечение для проведения ICO: личный кабинет инвестора с поддержкой реферальных и баунти-программ, кастомных смарт-контрактов, продажи токенов с использованием кредитных карт и криптовалюты, KYC, панель администратора, аналитика и т.д."
+      },
+      {
+        "shortcut" : "Клиенты ICOAdm.in — это проекты, которые хотят привлечь средства через ICO без хлопот. Для них важно сосредоточиться на разработке продукта, а всё остальное ICOAdm.in берёт на себя."
+      }
+    ],
+    "fullText": [
+    ]
+  },
+  {
+    "name": "swap.online",
+    "className": "swap-online",
+    "site": "www.swap.online",
+    "logo": {
+      "name": "swap-online-logotype.png",
+      "width": 514,
+      "height": 293
+    },
+    "longDescr": "Децентрализованный OTC Market криптовалют, построенный на базе Atomic Swap",
+    "slogan": "Безопасный кросс-платформенный обмен криптовалют в любом браузере",
+    "shortText" : [
+      {
+        "shortcut" : "Команда Swap.Online состоит из высококлассных frontend-разработчиков, которые исповедуют Serverless-подход: ничего не проходит через серверы Swap.Online, всё работает полностью на JavaScript прямо в браузере пользователей; даже ордербук (список предложений по обмену) размещается децентрализованно в IPFS, что делает систему полностью децентрализованной."
+      },
+      {
+        "shortcut" : "Решение Swap.Online поможет прекратить кражи в блокчейнах. Большинство краж криптовалюты происходило по причине взлома централизованных бирж, на которых множество пользователей хранили средства. Именно поэтому Swap.Online не хранит приватные ключи от кошельков пользователей и позволяет осуществлять обмен напрямую в блокчейнах, не привлекая третьей стороны."
+      },
+      {
+        "shortcut" : "Ещё одно преимущество Swap.Online — удобство для конечного пользователя. Чтобы обменять, например, Биткоин на Эфир, не нужно скачивать каких-то специальных программ на компьютер, разбираться в смарт-контрактах или ещё в чем-то таком сложном. Достаточно открыть сайт в браузере и начать обмен. Всё просто и безопасно."
+      }
+    ],
+    "fullText": [
+    ]
+  },
+  {
     "name": "jury.online",
     "className": "jury-online",
-    "longDescr": "Unique platform for secure investment in responsible ICOs.",
-    "slogan": "The place for responsible ICO ",
     "site": "www.jury.online",
     "logo": {
       "name": "jury-online-logotype.png",
       "width": 513,
       "height": 290
     },
+    "longDescr": "Платформа для ответственного ICO",
+    "slogan": "Уникальная платформа для безопасных инвестиций в ответственные ICO.",
     "shortText" : [
       {
-        "heading": "ICO Dispute Resolution",
-        "shortcut": "Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain"
+        "shortcut" : "Escrow-платформа с функцией арбитража споров, обеспечивающая доверительное и безопасное взаимодействие инвестора и ICO-проекта. Jury.Online осуществляет поэтапное финансирование стартапа по мере выполнения командой этапов, прописанных в дорожной карте и заложенных в смарт-контракт. В случае возникновения разногласий, к спору подключаются авторитетные арбитры."
       },
       {
-        "heading": "Security",
-        "shortcut": "All smart contracts are deployed by the Projects, but they are based on Jury.Online templates which are open source and verified. This method helps to achieve flawless operation of smart contracts and add Arbiters to the relations between the Investor and the Project."
+        "shortcut" : "Идея проекта возникла в августе 2017 года ICO: в 2018 году команда Jury.Online успешно провела ICO, проект собрал 3 228 464,80 USD."
       },
       {
-        "heading": "Multistep Funds Release",
-        "shortcut": "Stored funds are released upon completion of certain milestones set by the Project."
+        "shortcut" : "На сегодняшний день Jury.Online помогает привлекать инвестиции 6-ти проектам, в числе наших клиентов: Kvantor, GridEx, Endo, RichBit, Lancer Network, Wono. Ближайшие планы: запуск полнофункциональной версии платформы - октябрь 2018, запуск полноценного маркетплейса услуг планируется в ноябре 2018 года, конструктор смарт контрактов и арбитраж любых сделок - январь 2019 года."
       }
     ],
     "fullText": [
-      [
-        {
-          "heading": "ICO Dispute Resolution",
-          "paragraphs": [
-            "Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online offers pools of Arbiters for the Projects and Investors.",
-            "Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online offers pools of Arbiters for the Projects and Investors.",
-            "Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online."
-          ]
-        },
-        {
-          "paragraphs": [
-            "Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain"
-          ]
-        },
-        {
-          "heading": "Security",
-          "paragraphs": [
-            "All smart contracts are deployed by the Projects, but they are based on Jury.Online templates which are open source and verified. This method helps to achieve flawless operation of smart contracts and add Arbiters to the relations between the Investor and the Project. Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain."
-          ]
-        }
-      ],
-
-      [
-        {
-          "heading": "Multistep Funds Release",
-          "paragraphs": [
-            "Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online offers pools of Arbiters for the Projects and Investors.",
-            "Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online offers pools of Arbiters for the Projects and Investors. Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online offers pools of Arbiters for the Projects and Investors.",
-            "Arbiters are people well-known in various areas as IT, fintech, legal or blockchain Jury.Online."
-          ]
-        }
-      ]
+    ]
+  },
+  {
+    "name": "buzz.io",
+    "className": "buzz-io",
+    "site": "www.buzz.io",
+    "logo": {
+      "name": "buzz-im-logotype.png",
+      "width": 513,
+      "height": 131
+    },
+    "longDescr": "Платформа для размещения рекламы в каналах телеграм",
+    "slogan": "Объединяет рекламодателей и владельцев каналов",
+    "link": "project-buzz-io.html",
+    "shortText" : [
+      {
+        "shortcut" : "Сервис позволяет рекламодателям создавать кампании, а владельцам каналов — монетизировать свою аудиторию."
+      },
+      {
+        "shortcut" : "Рекламодатели используют Buzz.im, потому что сервис предоставляет гарантии. Обращаясь напрямую к владельцам канала, рекламодатель рискует: владелец может забыть разместить рекламу в нужное время, не увидеть запрос, или же удалить рекламу раньше времени."
+      },
+      {
+        "shortcut" : "Используя сервис buzz.im, рекламодатель уверен в качестве размещения рекламы. Деньги за рекламу замораживаются в системе до исполнения владельцем канала своих обязательств."
+      },
+      {
+        "shortcut" : "Бот buzz.im следит за всеми каналами из каталога и контролирует соблюдение условий публикаций. Сотрудничая с Buzz.im, рекламодатели надежно защищены от мошенников и могут эффективно рекламировать свой бизнес в Telegram."
+      }
+    ],
+    "fullText": [
+    ]
+  },
+  {
+    "name": "dialogue key",
+    "className": "dialogue-key",
+    "site": "www.dialoguekey.com",
+    "link": "project-dialogue-key.html",
+    "logo": {
+      "name": "dialogue-key-logotype.png",
+      "width": 513,
+      "height": 183
+    },
+    "longDescr": "Платформа Dialogue Key объединяет пользователей: интертеймент-профессионалов, бизнес-элиту, популярные бренды, стратегических партнеров и подрядчиков.",
+    "slogan": "Социальная сеть для сообщества профессионалов интертеймент-индустрии.",
+    "shortText" : [
+      {
+        "shortcut" : "Dialogue Key при помощи авторской технологии обеспечивает верификацию всех пользователей, первоклассный нетворкинг и доступ к клубу особых привилегий и роскошных путешествий, обслуживая ежегодно растущий рынок."
+      },
+      {
+        "shortcut" : "В основе платформы интеграция с социальными CRM, ERP-системами, ECM-системами. Уровень интеграции затрагивает управление содержанием, управление идентификацией и общеорганизационный поиск."
+      },
+      {
+        "shortcut" : "Взаимодействие членов сообщества происходит через AppStore, мобильные приложения, веб-приложения, мобильные устройства. Также у Dialogue Key есть собственный медиаресурс, включающий: DK ТВ,  DK Журнал, DK Радио, DK YouTube."
+      }
+    ],
+    "fullText": [
+    ]
+  },
+  {
+    "name": "array.io",
+    "className": "array-io",
+    "site": "www.array.io",
+    "logo": {
+      "name": "array-io-logotype.png",
+      "width": 287,
+      "height": 300
+    },
+    "link": "project-array-io.html",
+    "longDescr": "Децентрализация для ваших DАpp",
+    "slogan": "Магазин по-настоящему децентрализованных приложений",
+    "shortText" : [
+      {
+        "shortcut" : "Array.io — платформа для разработки и запуска децентрализованных приложений (DApps) с удобным пользовательским интерфейсом, которая состоит из трех основных компонентов:",
+        "mod": "list-heading"
+      },
+      {
+        "shortcut" : "Собственного блокчейна с консенсусом DPOS (Delegated Proof-of-Stake) и поддержкой смарт-контрактов на Solidity: всё самое лучшее из BitShares и Ethereum.",
+        "mod": "list-item"
+      },
+      {
+        "shortcut" : "Keychain — изолированного модуля для безопасного хранения приватных ключей",
+        "mod": "list-item"
+      },
+      {
+        "shortcut" : "Маркетплейса децентрализованных приложений.",
+        "mod": "list-item"
+      },
+      {
+        "shortcut" : "Проект Array.io ставит перед собой цель создать новую парадигму программирования путем снижения порога входа в блокчейн-проекты для разработчиков: DApps в Array.io работают на популярных языках HTML, CSS, Javascript и Solidity, что позволяет создавать самые разнообразные децентрализованные приложения, начиная от инди-игр и файловых хостингов – и заканчивая кошельками и мессенджерами.",
+        "mod": "after-list"
+      },
+      {
+        "shortcut" : "В маркетплейсе Array.io реализован удобный поиск по децентрализованным приложениям - по рейтингу, отзывами и категориям."
+      }
+    ],
+    "fullText": [
     ]
   }
 ]

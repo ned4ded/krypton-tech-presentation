@@ -2,7 +2,9 @@
   <div class="project-jumbotron{{ ' ' + mods if mods}}">
     <img src="assets/imgs/{{ project.logo.name }}" alt="" width="{{ project.logo.width }}" height="{{ project.logo.height }}" class="project-jumbotron__logotype">
 
+    {% if project.slogan %}
     <p class="project-jumbotron__slogan">{{ project.slogan }}</p>
+    {% endif %}
 
     <p class="project-jumbotron__descr">{{ project['long-description'] }}</p>
 

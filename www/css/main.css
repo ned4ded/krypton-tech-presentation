@@ -594,6 +594,7 @@ body {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   width: 100%;
+  max-width: 750px;
   padding-top: 88px; }
   .project-jumbotron__logotype {
     margin-bottom: 68px; }
@@ -608,6 +609,7 @@ body {
     font-size: 16.5px;
     font-weight: 500;
     line-height: 100%;
+    text-align: center;
     -webkit-background-clip: text;
     background-clip: text; }
   .project-jumbotron__descr {
@@ -625,6 +627,8 @@ body {
     line-height: 1.6;
     -webkit-background-clip: text;
     background-clip: text; }
+    .project-jumbotron--dialogue-key .project-jumbotron__descr {
+      max-width: 100%; }
   .project-jumbotron__site-container {
     position: absolute;
     top: 0;
@@ -933,6 +937,7 @@ body {
   .project__slogan {
     margin: 0;
     margin-bottom: 24px;
+    text-align: center;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: transparent;
@@ -943,6 +948,8 @@ body {
     line-height: 100%;
     -webkit-background-clip: text;
     background-clip: text; }
+    .project-page--icoadm-in .project__slogan {
+      max-width: 420px; }
   .project__descr {
     max-width: 312px;
     margin: 0;
@@ -958,6 +965,8 @@ body {
     line-height: 1.6;
     -webkit-background-clip: text;
     background-clip: text; }
+    .project-page--dialogue-key .project__descr {
+      max-width: 100%; }
   .project__paragraph {
     width: 100%;
     padding-left: 60px;
@@ -1006,6 +1015,26 @@ body {
       max-width: 415px; }
       .project__paragraph-text:not(:last-of-type) {
         margin-bottom: 25px; }
+      .project-page--array-io .project__paragraph-text {
+        max-width: 550px; }
+    .project__paragraph--list-heading:not(:last-of-type) {
+      margin-bottom: 15px; }
+    .project__paragraph--list-item:not(:last-of-type) {
+      margin-bottom: 10px;
+      padding-left: 85px;
+      position: relative; }
+      .project__paragraph--list-item:not(:last-of-type):before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 65px;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background-color: #bcc6ca; }
+    .project__paragraph--after-list:not(:last-of-type) {
+      margin-top: 32px; }
   .project__row--horizontal .project__paragraph {
     width: 50%; }
   .project__transporter {

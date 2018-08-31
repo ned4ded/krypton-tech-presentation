@@ -87,6 +87,7 @@
   &__slogan {
     margin: 0;
     margin-bottom: 24px;
+    text-align: center;
 
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -100,6 +101,10 @@
     line-height: 100%;
 
     @include bg-clip-text;
+
+    .project-page--icoadm-in & {
+      max-width: 420px;
+    }
   }
 
   &__descr {
@@ -120,6 +125,10 @@
     line-height: 1.6;
 
     @include bg-clip-text;
+
+    .project-page--dialogue-key & {
+      max-width: 100%;
+    }
   }
 
   &__paragraph {
@@ -174,6 +183,36 @@
       &:not(:last-of-type) {
         margin-bottom: 25px;
       }
+
+      .project-page--array-io & {
+        max-width: 550px;
+      }
+    }
+
+    &--list-heading:not(:last-of-type) {
+      margin-bottom: 15px;
+    }
+
+    &--list-item:not(:last-of-type) {
+      margin-bottom: 10px;
+      padding-left: 85px;
+      position: relative;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 65px;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background-color: lighten(#697d84, 30%);
+      }
+    }
+
+    &--after-list:not(:last-of-type) {
+      margin-top: 32px;
     }
   }
 

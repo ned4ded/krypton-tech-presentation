@@ -12,25 +12,32 @@
   <div class="dashboard__container dashboard__container--project">
     <div class="project">
     <div data-transporter class="project__transporter">
-      <div data-page class="project__page project__page--main">
+      <div data-page class="project__page project__page--main project-page--{{ className }}">
         <div class="project__row">
           <div class="project__column project__info">
             <img src="assets/imgs/{{ logo.name }}" alt="" width="{{ logo.width }}" height="{{ logo.height }}" class="project__logotype project__logotype--{{className}}">
 
+            {% if slogan %}
             <p class="project__slogan">{{ slogan }}</p>
+            {% endif %}
 
             <p class="project__descr">{{ longDescr }}</p>
           </div>
 
           <div class="project__column">
             {% for item in shortText %}
-            <div class="project__paragraph project__paragraph--shortcut">
+            <div class="project__paragraph project__paragraph--shortcut{{ ' project__paragraph--' + item.mod if item.mod }}">
+              {% if heading %}
               <p class="project__paragraph-heading">
                 {{ item.heading }}
               </p>
+              {% endif %}
+
+              {% if item.shortcut %}
               <p class="project__paragraph-text">
                 {{ item.shortcut }}
               </p>
+              {% endif %}
             </div>
             {% endfor %}
           </div>
